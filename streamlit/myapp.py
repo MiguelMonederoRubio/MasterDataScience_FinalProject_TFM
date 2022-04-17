@@ -28,6 +28,8 @@ with row1_2:
     Displayed are the scores of public universities in Spain to study medicine (selectivity scores).
     "1_list" is the first grade to enter the univeristy and "final_grade" the last one, therefore the lowest one.
     By sliding the slider on the left you can the different scores per year.
+    
+    *Please note that scores shown for 2022 are predicted scores calculated by a Machine Learning model.
     """
     )
 
@@ -38,10 +40,8 @@ with row2_1:
 
 
 
-dfs_unified_orig = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/exported_data.csv')
+dfs_unified = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/exported_data.csv')
 
-# show only relevant columns
-dfs_unified = dfs_unified_orig[['year', 'university', '1_list', 'final_grade']]
 
 # Sidebar
 #st.sidebar.header('User Input Features')
@@ -67,7 +67,7 @@ with row2_2:
 
 
 
-# LAYING OUT THE MIDDLE SECTION OF THE APP WITH THE MAPS
+# LAYING OUT THE MIDDLE SECTION OF THE APP
 row2_1, row2_2 = st.columns((2, 2))
 
 df_selected_year = dfs_unified[(dfs_unified['year'] == selected_year)]
@@ -77,7 +77,7 @@ with row2_1:
 # bar chart
   if convocatory_selected == '1_list':
     chart = alt.Chart(df_selected_year).mark_bar().encode(
-        y=alt.Y('university:O', sort=alt.EncodingSortField(field="1_list", op="values", order='descending'), axis=alt.Axis(title='University')),
+        y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
         x=alt.X('1_list:Q', axis=alt.Axis(title='1_list'), scale=alt.Scale(domain=(min(df_selected_year['1_list']) - 0.01, max(df_selected_year['1_list']) + 0.01))),
         #color=alt.Color('convocatory:N'),
         tooltip=('university','1_list')
@@ -85,7 +85,7 @@ with row2_1:
     st.altair_chart(chart, use_container_width=True)
   else:
     chart = alt.Chart(df_selected_year).mark_bar().encode(
-        y=alt.Y('university:O', sort=alt.EncodingSortField(field="final_grade", op="values", order='descending'), axis=alt.Axis(title='University')),
+        y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
         x=alt.X('final_grade:Q', scale=alt.Scale(domain=(min(df_selected_year['final_grade']) - 0.01, max(df_selected_year['final_grade']) + 0.01))),
         #color=alt.Color('convocatory:N'),
         tooltip=('university','final_grade')
@@ -99,8 +99,6 @@ with row2_2:
   json1 = f"/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/georef-spain-comunidad-autonoma.geojson"
   m = folium.Map(location=[37,-8], zoom_start=5, width=700, height=550, control_scale=True, tiles='CartoDB Positron',
                 name='Light Map', attr='My Data attribution')
-  
-
 
   #Add layers for Popup and Tooltips
 
@@ -128,20 +126,21 @@ with row2_2:
   )
 
 
-
+  
   # Choropleth layer
   g = folium.Choropleth(
-      geo_data=json1,
-      name='choropleth',
-      data=prueba,
-      columns=['acom_code',convocatory_selected],
+      geo_data = json1,
+      name = 'choropleth',
+      data = dfs_unified,
+      columns=['acom_code', 'avg_final_grade_CCAA'],
       key_on='feature.properties.acom_code',
-      fill_color='YlGn',
+      fill_color='YlOrRd',
       fill_opacity=0.5,
       line_opacity=0.2,
-      legend_name=convocatory_selected,
+      legend_name='avg_final_grade_CCAA',
       highlight=True
   ).add_to(m)
+  
 
 
   folium.GeoJson(
@@ -154,10 +153,10 @@ with row2_2:
       },
       tooltip=tooltip,
       popup=popup).add_to(g)
+      
 
   folium.LayerControl().add_to(m)
   folium_static(m, width=700, height=550)
-  
 
 
 
@@ -178,7 +177,7 @@ with row3_2:
     """
     )
 
-# LAYING OUT THE MIDDLE SECTION OF THE APP WITH THE MAPS
+# LAYING OUT THE MIDDLE SECTION OF THE APP
 row4_1, row4_2 = st.columns((2, 2))
 
 
@@ -223,11 +222,68 @@ with row4_1:
 
 
 with row4_2:
+  st.set_option('deprecation.showPyplotGlobalUse', False)
   df_selected_university = dfs_unified[(dfs_unified['university'] == selected_university)]
-  df = df_selected_university[['year', '1_list', 'final_grade']]
-  plt.figure(figsize=(16, 6))
-  heatmap = sns.heatmap(df.corr(), vmax=1, annot=True, cmap='BrBG')
-  heatmap.set_title('Correlation Heatmap', fontdict={'fontsize':12}, pad=12);
-  st.pyplot()
+
+  if convocatory_selected == '1_list':
+    df = df_selected_university[['year', '1_list']]
+    plt.figure(figsize=(16, 4))
+    heatmap = sns.heatmap(df.corr(), vmax=1, annot=True, cmap='BrBG')
+    heatmap.set_title('Correlation Heatmap', fontdict={'fontsize':14}, pad=12);
+    st.pyplot()
+  else:
+    df = df_selected_university[['year', 'final_grade']]
+    plt.figure(figsize=(16, 4))
+    heatmap = sns.heatmap(df.corr(), vmax=1, annot=True, cmap='BrBG')
+    heatmap.set_title('Correlation Heatmap', fontdict={'fontsize':14}, pad=12);
+    st.pyplot()
 
 
+
+#fig, ax = plt.subplots()
+#ax.scatter([1, 2, 3], [1, 2, 3])
+#other plotting actions ...
+#st.pyplot(fig)
+
+# LAYING OUT THE BOTTOM SECTION OF THE APP
+row5_1, row5_2 = st.columns((2, 2))
+
+# diff between 1_list and final_grade column
+
+with row5_1:
+  
+  # bar chart
+  
+  chart = alt.Chart(df_selected_year).mark_bar().encode(
+      y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
+      x=alt.X('diff_1_list_final_grade:Q', axis=alt.Axis(title='Difference 1_list and final_grade'), scale=alt.Scale(domain=(min(df_selected_year['diff_1_list_final_grade']), max(df_selected_year['diff_1_list_final_grade'])))),
+      tooltip=('university','diff_1_list_final_grade')
+    ).properties(title = 'Difference between 1_list scores and final_grade for year ' + str(selected_year), width=200, height=600)
+  st.altair_chart(chart, use_container_width=True)
+
+
+with row5_2:
+  # DO THIS WITH THE FUNCTION ABOVE; NEED TO GENERALIZE IT
+  if convocatory_selected == 'final_grade':
+      y_axis = 'growth_final_grade:Q'
+  else:
+      y_axis = 'growth_1_list:Q'
+  # filter by university
+  df_selected_university = dfs_unified[(dfs_unified['university'] == selected_university)]
+  # chart
+  chart = alt.Chart(df_selected_university).mark_line(point=True).encode(
+      x=alt.X('year:N', axis=alt.Axis(title='Year')),
+      y=alt.Y(y_axis, axis=alt.Axis(title= str(convocatory_selected) + ' percentage difference'), scale=alt.Scale(domain=(min(df_selected_university['growth_' + convocatory_selected]) - 0.01, max(df_selected_university['growth_' + convocatory_selected]) + 0.01))),
+      tooltip=y_axis).properties(title = str(convocatory_selected)  + ' percentage difference across years')
+  st.altair_chart(chart, use_container_width=True)
+
+# IDEAS: filter by CCAA, choose zoom on map, section below only for 2022 scores, input score and tells you where you will get in, in 1_list or final_grade
+
+row6_1, row6_2 = st.columns((2, 2))
+
+
+with row6_1:
+
+
+
+  

@@ -1,430 +1,430 @@
-year,university,1_list,final_grade,city,diff_1_list_final_grade
-2010,universidad de lérida,11.654,11.04,lérida,0.6140000000000008
-2010,universidad de gerona,11.61,11.07,gerona,0.5399999999999991
-2010,universidad rovira i virgili (reus),11.708,11.142,reus,0.5660000000000007
-2010,u. de zaragoza (campus huesca),12.059,11.19,huesca,0.8689999999999998
-2010,universidad autónoma de barcelona,11.59,11.195,barcelona,0.3949999999999996
-2010,universidad de valladolid,12.29,11.204,valladolid,1.0859999999999985
-2010,u. de cantabria (santander),12.592,11.212,santander,1.3800000000000008
-2010,u. de santiago de compostela,11.8,11.23,santiago de compostela,0.5700000000000003
-2010,u. de extremadura (badajoz),12.5,11.236,badajoz,1.2639999999999993
-2010,universidad de cádiz,12.12,11.286,cádiz,0.8339999999999996
-2010,u. pompeu fabra (barcelona),11.976,11.328,barcelona,0.6480000000000015
-2010,universidad de barcelona-clínico,12.04,11.35,barcelona,0.6899999999999995
-2010,universidad de salamanca,12.564,11.37,salamanca,1.1940000000000008
-2010,u. de zaragoza (campus zaragoza),12.185,11.39,zaragoza,0.7949999999999999
-2010,u. de c-la mancha (campus c.real),12.343,11.478,ciudad real,0.8650000000000002
-2010,universidad de córdoba,12.295,11.496,córdoba,0.7989999999999995
-2010,universidad del país vasco (lejona),11.922,11.503,país vasco,0.4190000000000005
-2010,u. de c-la mancha (campus albacete),12.246,11.53,albacete,0.7160000000000011
-2010,universidad de sevilla,12.272,11.559,sevilla,0.713000000000001
-2010,u. miguel hernández (s. juan de alicante),12.216,11.584,alicante,0.6319999999999997
-2010,universidad de alcalá,11.862,11.631,alcalá,0.23099999999999987
-2010,universidad de málaga,12.225,11.645,málaga,0.5800000000000001
-2010,universidad de murcia,12.388,11.666,murcia,0.7219999999999995
-2010,universidad de la laguna,12.2,11.68,la laguna,0.5199999999999996
-2010,urjc - campus alcorcón,11.867,11.7,madrid,0.1670000000000016
-2010,universidad de valencia,12.247,11.732,valencia,0.5150000000000006
-2010,u. autónoma de madrid,12.036,11.84,madrid,0.19599999999999973
-2010,universidad de las palmas,12.312,11.849,las palmas,0.4629999999999992
-2010,universidad de granada,12.503,11.959,granada,0.5440000000000005
-2010,universidad complutense de madrid,12.189,12.022,madrid,0.16699999999999982
-2010,universidad de oviedo,12.579,12.088,oviedo,0.49100000000000144
-2011,universidad de gerona,11.619,11.26,gerona,0.359
-2011,universidad de lérida,11.65,11.316,lérida,0.33399999999999963
-2011,universidad del país vasco (lejona),11.747,11.346,país vasco,0.4009999999999998
-2011,universidad rovira i virgili (reus),11.786,11.406,reus,0.379999999999999
-2011,universidad autónoma de barcelona,11.726,11.482,barcelona,0.24400000000000155
-2011,u. de zaragoza (campus huesca),12.02,11.587,huesca,0.43299999999999983
-2011,u. de santiago de compostela,12.014,11.598,santiago de compostela,0.4159999999999986
-2011,u. de cantabria (santander),12.437,11.632,santander,0.8049999999999997
-2011,u. pompeu fabra (barcelona),12.04,11.714,barcelona,0.32599999999999874
-2011,u. de zaragoza (campus zaragoza),12.134,11.725,zaragoza,0.4090000000000007
-2011,universidad jaume i,12.332,11.73,castellon de la plana,0.6020000000000003
-2011,u. de extremadura (badajoz),12.565,11.758,badajoz,0.8070000000000004
-2011,universidad de valladolid,12.156,11.79,valladolid,0.36600000000000144
-2011,universidad de barcelona-clínico,12.158,11.867,barcelona,0.2909999999999986
-2011,universidad de salamanca,12.2,11.867,salamanca,0.3329999999999984
-2011,universidad de cádiz,12.366,11.921,cádiz,0.4450000000000003
-2011,u. de c-la mancha (campus albacete),12.36,11.964,albacete,0.395999999999999
-2011,universidad de la laguna,12.42,11.977,la laguna,0.4429999999999996
-2011,universidad de valencia,12.41,11.986,valencia,0.4239999999999995
-2011,universidad de murcia,12.602,11.987,murcia,0.6150000000000002
-2011,universidad de sevilla,12.451,12.022,sevilla,0.42900000000000027
-2011,u. miguel hernández (s. juan de alicante),12.52,12.022,alicante,0.49799999999999933
-2011,universidad de alcalá,12.125,12.023,alcalá,0.10200000000000031
-2011,u. de c-la mancha (campus c.real),12.4,12.04,ciudad real,0.3600000000000012
-2011,urjc - campus alcorcón,12.143,12.064,madrid,0.07900000000000063
-2011,universidad de córdoba,12.556,12.172,córdoba,0.38399999999999856
-2011,universidad de las palmas,12.411,12.195,las palmas,0.2159999999999993
-2011,u. autónoma de madrid,12.308,12.2,madrid,0.10800000000000054
-2011,universidad de málaga,12.55,12.204,málaga,0.3460000000000001
-2011,universidad de oviedo,12.692,12.292,oviedo,0.40000000000000036
-2011,universidad complutense de madrid,12.469,12.354,madrid,0.11500000000000021
-2011,universidad de granada,12.79,12.36,granada,0.4299999999999997
-2012,universidad rovira i virgili (reus),12.02,11.668,reus,0.3520000000000003
-2012,universidad de gerona,11.946,11.672,gerona,0.27399999999999913
-2012,universidad de lérida,11.944,11.68,lérida,0.2640000000000011
-2012,universidad autónoma de barcelona,12.022,11.765,barcelona,0.2569999999999997
-2012,u. de santiago de compostela,12.179,11.78,santiago de compostela,0.3990000000000009
-2012,u. de zaragoza (campus huesca),12.268,11.796,huesca,0.4720000000000013
-2012,universidad de barcelona-clínico,12.332,11.8,barcelona,0.532
-2012,u. pompeu fabra (barcelona),12.242,11.808,barcelona,0.43400000000000105
-2012,u. de cantabria (santander),12.504,11.81,santander,0.6939999999999991
-2012,universidad del país vasco (lejona),12.119,11.83,país vasco,0.2889999999999997
-2012,universidad de valladolid,12.31,11.872,valladolid,0.4380000000000006
-2012,u. de zaragoza (campus zaragoza),12.376,11.906,zaragoza,0.46999999999999886
-2012,universidad jaume i,12.44,11.944,castellon de la plana,0.49599999999999866
-2012,u. de extremadura (badajoz),12.4,11.95,badajoz,0.45000000000000107
-2012,universidad de salamanca,12.37,11.957,salamanca,0.4129999999999985
-2012,universidad de cádiz,12.424,12.01,cádiz,0.4139999999999997
-2012,universidad de la laguna,12.57,12.053,la laguna,0.5169999999999995
-2012,u. de c-la mancha (campus c.real),12.458,12.068,ciudad real,0.39000000000000057
-2012,urjc - campus alcorcón,12.189,12.107,madrid,0.08200000000000074
-2012,u. de c-la mancha (campus albacete),12.456,12.115,albacete,0.3409999999999993
-2012,u. miguel hernández (s. juan de alicante),12.526,12.131,alicante,0.3949999999999996
-2012,universidad de sevilla,12.503,12.136,sevilla,0.3670000000000009
-2012,universidad de alcalá,12.229,12.178,alcalá,0.05099999999999838
-2012,universidad de las palmas,12.429,12.178,las palmas,0.25099999999999945
-2012,universidad de valencia,12.546,12.182,valencia,0.363999999999999
-2012,universidad de córdoba,12.555,12.196,córdoba,0.359
-2012,universidad de málaga,12.554,12.197,málaga,0.3570000000000011
-2012,universidad de oviedo,12.692,12.226,oviedo,0.4659999999999993
-2012,universidad de murcia,12.808,12.29,murcia,0.5180000000000007
-2012,u. autónoma de madrid,12.424,12.3,madrid,0.12399999999999878
-2012,universidad de granada,12.822,12.449,granada,0.37299999999999933
-2012,universidad complutense de madrid,12.499,12.499,madrid,0.0
-2013,universidad de lérida,12.0,11.73,lérida,0.2699999999999996
-2013,universidad rovira i virgili (reus),12.013,11.752,reus,0.26099999999999923
-2013,universidad de gerona,11.99,11.753,gerona,0.2370000000000001
-2013,universidad autónoma de barcelona,12.086,11.851,barcelona,0.23499999999999943
-2013,u. de zaragoza (campus huesca),12.352,11.852,huesca,0.5
-2013,u. de cantabria (santander),12.54,11.892,santander,0.6479999999999997
-2013,u. pompeu fabra (barcelona),12.342,11.9,barcelona,0.44200000000000017
-2013,u. de zaragoza (campus zaragoza),12.425,11.905,zaragoza,0.5200000000000014
-2013,universidad de valladolid,12.325,11.912,valladolid,0.4129999999999985
-2013,universidad del país vasco (lejona),12.079,11.914,país vasco,0.16500000000000092
-2013,universidad jaume i,12.334,11.931,castellon de la plana,0.40300000000000047
-2013,u. de santiago de compostela,12.268,11.951,santiago de compostela,0.31700000000000017
-2013,universidad de salamanca,12.381,11.999,salamanca,0.3819999999999997
-2013,u. de extremadura (badajoz),12.452,12.028,badajoz,0.4239999999999995
-2013,universidad de cádiz,12.455,12.056,cádiz,0.3990000000000009
-2013,universidad de barcelona-clínico,12.408,12.089,barcelona,0.31899999999999906
-2013,u. de c-la mancha (campus c.real),12.505,12.1,ciudad real,0.40500000000000114
-2013,universidad de alcalá,12.396,12.1,alcalá,0.29600000000000115
-2013,u. miguel hernández (s. juan de alicante),12.43,12.103,alicante,0.32699999999999996
-2013,universidad de la laguna,12.48,12.123,la laguna,0.3570000000000011
-2013,urjc - campus alcorcón,12.343,12.136,madrid,0.20700000000000074
-2013,universidad de valencia,12.523,12.146,valencia,0.3769999999999989
-2013,u. de c-la mancha (campus albacete),12.558,12.17,albacete,0.3879999999999999
-2013,universidad de córdoba,12.538,12.233,córdoba,0.3049999999999997
-2013,universidad de sevilla,12.537,12.258,sevilla,0.2790000000000017
-2013,universidad de las palmas,12.592,12.26,las palmas,0.33200000000000074
-2013,universidad de málaga,12.627,12.307,málaga,0.3200000000000003
-2013,universidad de murcia,12.743,12.346,murcia,0.39700000000000024
-2013,u. autónoma de madrid,12.558,12.429,madrid,0.12899999999999956
-2013,universidad complutense de madrid,12.571,12.435,madrid,0.13599999999999923
-2013,universidad de oviedo,12.694,12.458,oviedo,0.23600000000000065
-2013,universidad de granada,12.764,12.516,granada,0.24799999999999933
-2014,universidad de lérida,12.044,11.907,lérida,0.13700000000000045
-2014,universidad de gerona,12.058,11.919,gerona,0.13899999999999935
-2014,universidad rovira i virgili (reus),12.042,11.968,reus,0.07399999999999984
-2014,universidad del país vasco (lejona),12.111,12.023,país vasco,0.08800000000000097
-2014,u. de zaragoza (campus huesca),12.276,12.032,huesca,0.24399999999999977
-2014,universidad autónoma de barcelona,12.152,12.063,barcelona,0.08899999999999864
-2014,u. de zaragoza (campus zaragoza),12.4,12.053,zaragoza,0.34699999999999953
-2014,u. de cantabria (santander),12.54,12.068,santander,0.47199999999999953
-2014,universidad de valladolid,12.312,12.09,valladolid,0.22199999999999953
-2014,u. de santiago de compostela,12.332,12.102,santiago de compostela,0.23000000000000043
-2014,universidad de salamanca,12.413,12.107,salamanca,0.30600000000000094
-2014,universidad jaume i,12.422,12.118,castellon de la plana,0.30400000000000027
-2014,u. de c-la mancha (campus c.real),12.53,12.156,ciudad real,0.3739999999999988
-2014,u. de c-la mancha (campus albacete),12.56,12.19,albacete,0.370000000000001
-2014,urjc - campus alcorcón,12.382,12.285,madrid,0.09699999999999953
-2014,u. pompeu fabra (barcelona),12.356,12.288,barcelona,0.06799999999999962
-2014,u. miguel hernández (s. juan de alicante),12.514,12.304,alicante,0.20999999999999908
-2014,u. de extremadura (badajoz),12.682,12.306,badajoz,0.3760000000000012
-2014,universidad de cádiz,12.603,12.35,cádiz,0.2530000000000001
-2014,universidad de valencia,12.656,12.356,valencia,0.3000000000000007
-2014,universidad de alcalá,12.422,12.376,alcalá,0.04600000000000115
-2014,universidad de murcia,12.854,12.389,murcia,0.46499999999999986
-2014,universidad de barcelona-clínico,12.46,12.394,barcelona,0.06600000000000072
-2014,universidad de oviedo,12.692,12.408,oviedo,0.2840000000000007
-2014,universidad de sevilla,12.653,12.44,sevilla,0.21300000000000097
-2014,universidad de córdoba,12.683,12.466,córdoba,0.21700000000000053
-2014,universidad de málaga,12.72,12.473,málaga,0.2469999999999999
-2014,universidad de las palmas,12.78,12.509,las palmas,0.270999999999999
-2014,u. autónoma de madrid,12.652,12.558,madrid,0.09399999999999942
-2014,universidad de la laguna,12.793,12.58,la laguna,0.2129999999999992
-2014,universidad complutense de madrid,12.617,12.615,madrid,0.002000000000000668
-2014,universidad de granada,12.933,12.697,granada,0.23600000000000065
-2015,universidad de lérida,12.266,12.101,lérida,0.16499999999999915
-2015,universidad rovira i virgili (reus),12.236,12.108,reus,0.1280000000000001
-2015,u. de cantabria (santander),12.572,12.178,santander,0.39399999999999835
-2015,u. de santiago de compostela,12.332,12.178,santiago de compostela,0.15399999999999991
-2015,universidad de gerona,12.242,12.182,gerona,0.0600000000000005
-2015,universidad del país vasco (lejona),12.268,12.22,país vasco,0.04800000000000004
-2015,u. de zaragoza (campus huesca),12.456,12.234,huesca,0.22199999999999953
-2015,universidad de salamanca,12.498,12.241,salamanca,0.2569999999999997
-2015,universidad de valladolid,12.44,12.307,valladolid,0.13299999999999912
-2015,universidad jaume i,12.574,12.32,castellon de la plana,0.25399999999999956
-2015,universidad de oviedo,12.618,12.342,oviedo,0.2759999999999998
-2015,u. de extremadura (badajoz),12.84,12.36,badajoz,0.4800000000000004
-2015,universidad autónoma de barcelona,12.394,12.364,barcelona,0.02999999999999936
-2015,u. de zaragoza (campus zaragoza),12.547,12.404,zaragoza,0.14300000000000068
-2015,u. de c-la mancha (campus albacete),12.694,12.424,albacete,0.27000000000000135
-2015,u. de c-la mancha (campus c.real),12.678,12.433,ciudad real,0.245000000000001
-2015,u. miguel hernández (s. juan de alicante),12.644,12.438,alicante,0.20599999999999952
-2015,urjc - campus alcorcón,12.536,12.455,madrid,0.08099999999999952
-2015,universidad de alcalá,12.543,12.472,alcalá,0.07099999999999973
-2015,universidad de cádiz,12.719,12.482,cádiz,0.2370000000000001
-2015,universidad de valencia,12.774,12.514,valencia,0.2599999999999998
-2015,universidad de córdoba,12.736,12.569,córdoba,0.16699999999999982
-2015,universidad de la laguna,12.854,12.58,la laguna,0.27399999999999913
-2015,u. pompeu fabra (barcelona),12.632,12.598,barcelona,0.03399999999999892
-2015,universidad de málaga,12.766,12.606,málaga,0.16000000000000014
-2015,universidad de barcelona-clínico,12.698,12.642,barcelona,0.05600000000000094
-2015,universidad de sevilla,12.798,12.645,sevilla,0.15300000000000047
-2015,u. autónoma de madrid,12.819,12.651,madrid,0.16800000000000104
-2015,universidad de murcia,12.95,12.661,murcia,0.2889999999999997
-2015,universidad de granada,12.947,12.669,granada,0.2779999999999987
-2015,universidad complutense de madrid,12.697,12.697,madrid,0.0
-2015,universidad de las palmas,12.839,12.791,las palmas,0.04800000000000004
-2016,universidad de lérida,12.305,12.124,lérida,0.18099999999999916
-2016,universidad de las islas baleares,12.534,12.144,palma de mallorca,0.39000000000000057
-2016,universidad de gerona,12.303,12.168,gerona,0.13500000000000156
-2016,universidad rovira i virgili (reus),12.296,12.164,reus,0.13199999999999967
-2016,universidad autónoma de barcelona,12.348,12.185,barcelona,0.16300000000000026
-2016,universidad de barcelona-clínico,12.621,12.196,barcelona,0.4250000000000007
-2016,u. de zaragoza (campus huesca),12.588,12.236,huesca,0.35199999999999854
-2016,u. pompeu fabra (barcelona),12.62,12.264,barcelona,0.35599999999999987
-2016,u. de santiago de compostela,12.61,12.278,santiago de compostela,0.33199999999999896
-2016,u. de cantabria (santander),12.726,12.298,santander,0.4280000000000008
-2016,universidad de valladolid,12.592,12.3,valladolid,0.2919999999999998
-2016,universidad de salamanca,12.713,12.354,salamanca,0.359
-2016,universidad jaume i,12.754,12.376,castellon de la plana,0.3780000000000001
-2016,u. de zaragoza (campus zaragoza),12.683,12.382,zaragoza,0.30100000000000016
-2016,universidad del país vasco (lejona),12.444,12.392,país vasco,0.05200000000000138
-2016,universidad de oviedo,12.762,12.404,oviedo,0.35800000000000054
-2016,urjc - campus alcorcón,12.62,12.451,madrid,0.1689999999999987
-2016,u. miguel hernández (s. juan de alicante),12.848,12.501,alicante,0.3470000000000013
-2016,u. de c-la mancha (campus c.real),12.749,12.517,ciudad real,0.2320000000000011
-2016,u. de c-la mancha (campus albacete),12.768,12.525,albacete,0.24300000000000033
-2016,u. de extremadura (badajoz),13.082,12.532,badajoz,0.5500000000000007
-2016,universidad de alcalá,12.575,12.532,alcalá,0.04299999999999926
-2016,universidad de cádiz,12.831,12.55,cádiz,0.2809999999999988
-2016,universidad de valencia,12.856,12.584,valencia,0.27200000000000024
-2016,universidad complutense de madrid,12.742,12.599,madrid,0.14300000000000068
-2016,universidad de la laguna,12.888,12.603,la laguna,0.28500000000000014
-2016,universidad de málaga,12.878,12.665,málaga,0.21300000000000097
-2016,universidad de córdoba,12.874,12.684,córdoba,0.19000000000000128
-2016,u. autónoma de madrid,12.843,12.686,madrid,0.15700000000000003
-2016,universidad de granada,13.048,12.772,granada,0.2759999999999998
-2016,universidad de murcia,13.046,12.775,murcia,0.270999999999999
-2016,universidad de sevilla,12.97,12.784,sevilla,0.18599999999999994
-2016,universidad de las palmas,12.978,12.786,las palmas,0.19200000000000017
-2017,universidad rovira i virgili (reus),12.346,12.08,reus,0.266
-2017,universidad de lérida,12.311,12.11,lérida,0.2010000000000005
-2017,universidad de las islas baleares,12.744,12.112,palma de mallorca,0.6319999999999997
-2017,universidad de gerona,12.31,12.14,gerona,0.16999999999999993
-2017,u. de cantabria (santander),12.708,12.183,santander,0.5250000000000004
-2017,universidad autónoma de barcelona,12.365,12.202,barcelona,0.16300000000000026
-2017,universidad de valladolid,12.565,12.21,valladolid,0.35499999999999865
-2017,u. de extremadura (badajoz),12.906,12.236,badajoz,0.6699999999999999
-2017,u. de santiago de compostela,12.575,12.286,santiago de compostela,0.2889999999999997
-2017,u. de zaragoza (campus huesca),12.589,12.301,huesca,0.28800000000000026
-2017,universidad de salamanca,12.655,12.321,salamanca,0.33399999999999963
-2017,universidad del país vasco (lejona),12.4,12.331,país vasco,0.06900000000000084
-2017,universidad de barcelona-clínico,12.639,12.362,barcelona,0.27699999999999925
-2017,u. de c-la mancha (campus c.real),12.745,12.365,ciudad real,0.379999999999999
-2017,universidad de oviedo,12.84,12.37,oviedo,0.47000000000000064
-2017,u. pompeu fabra (barcelona),12.84,12.422,barcelona,0.41799999999999926
-2017,u. de c-la mancha (campus albacete),12.801,12.45,albacete,0.35100000000000087
-2017,u. de zaragoza (campus zaragoza),12.695,12.45,zaragoza,0.245000000000001
-2017,universidad jaume i,12.78,12.464,castellon de la plana,0.31599999999999895
-2017,universidad de cádiz,12.795,12.483,cádiz,0.3119999999999994
-2017,universidad de la laguna,12.931,12.547,la laguna,0.38399999999999856
-2017,universidad de córdoba,12.873,12.623,córdoba,0.25
-2017,u. miguel hernández (s. juan de alicante),12.851,12.624,alicante,0.2270000000000003
-2017,universidad de málaga,12.856,12.631,málaga,0.22499999999999964
-2017,universidad de las palmas,12.924,12.656,las palmas,0.2679999999999989
-2017,universidad de valencia,12.99,12.664,valencia,0.3260000000000005
-2017,urjc - campus alcorcón,12.793,12.693,madrid,0.09999999999999964
-2017,universidad de sevilla,12.921,12.725,sevilla,0.19599999999999973
-2017,universidad de alcalá,12.747,12.743,alcalá,0.0039999999999995595
-2017,universidad de granada,13.026,12.75,granada,0.2759999999999998
-2017,universidad de murcia,13.176,12.819,murcia,0.3569999999999993
-2017,universidad complutense de madrid,12.871,12.871,madrid,0.0
-2017,u. autónoma de madrid,13.11,12.96,madrid,0.14999999999999858
-2018,universidad de las islas baleares,12.568,12.12,palma de mallorca,0.4480000000000004
-2018,universidad de lérida,12.264,12.128,lérida,0.13599999999999923
-2018,universidad rovira i virgili (reus),12.362,12.13,reus,0.23199999999999932
-2018,universidad de gerona,12.258,12.17,gerona,0.08799999999999919
-2018,universidad autónoma de barcelona,12.334,12.253,barcelona,0.08099999999999952
-2018,u. de cantabria (santander),12.68,12.324,santander,0.35599999999999987
-2018,universidad del país vasco (lejona),12.407,12.332,país vasco,0.07499999999999929
-2018,u. de santiago de compostela,12.531,12.34,santiago de compostela,0.19100000000000072
-2018,universidad de valladolid,12.606,12.37,valladolid,0.23600000000000065
-2018,u. de zaragoza (campus huesca),12.61,12.379,huesca,0.23099999999999987
-2018,u. de extremadura (badajoz),12.981,12.386,badajoz,0.5950000000000006
-2018,universidad de salamanca,12.668,12.386,salamanca,0.28200000000000003
-2018,u. pompeu fabra (barcelona),12.704,12.396,barcelona,0.30799999999999983
-2018,u. de c-la mancha (campus c.real),12.818,12.41,ciudad real,0.4079999999999995
-2018,universidad de cádiz,12.801,12.451,cádiz,0.34999999999999964
-2018,universidad de oviedo,12.828,12.456,oviedo,0.3719999999999999
-2018,universidad de barcelona-clínico,12.641,12.475,barcelona,0.16600000000000037
-2018,universidad de la laguna,12.859,12.491,la laguna,0.3680000000000003
-2018,u. de zaragoza (campus zaragoza),12.732,12.511,zaragoza,0.22100000000000009
-2018,universidad de córdoba,12.842,12.555,córdoba,0.2870000000000008
-2018,universidad de murcia,13.017,12.605,murcia,0.41199999999999903
-2018,universidad de málaga,12.87,12.612,málaga,0.2579999999999991
-2018,universidad de las palmas,12.859,12.625,las palmas,0.23399999999999999
-2018,universidad jaume i,12.948,12.628,castellon de la plana,0.3200000000000003
-2018,universidad de granada,13.015,12.671,granada,0.3440000000000012
-2018,u. de c-la mancha (campus albacete),12.918,12.674,albacete,0.24399999999999977
-2018,universidad de sevilla,12.926,12.723,sevilla,0.2029999999999994
-2018,urjc - campus alcorcón,12.792,12.746,madrid,0.045999999999999375
-2018,u. miguel hernández (s. juan de alicante),13.026,12.766,alicante,0.2599999999999998
-2018,universidad de alcalá,12.811,12.811,alcalá,0.0
-2018,universidad de valencia,13.058,12.812,valencia,0.24600000000000044
-2018,u. autónoma de madrid,13.124,12.936,madrid,0.1880000000000006
-2018,universidad complutense de madrid,12.966,12.966,madrid,0.0
-2019,universidad de lérida,12.293,12.18,lérida,0.11299999999999955
-2019,universidad rovira i virgili (reus),12.329,12.182,reus,0.14700000000000024
-2019,universidad de gerona,12.275,12.197,gerona,0.07800000000000118
-2019,universidad de las islas baleares,12.622,12.209,palma de mallorca,0.41300000000000026
-2019,universidad autónoma de barcelona,12.314,12.3,barcelona,0.013999999999999346
-2019,u. de zaragoza (campus huesca),12.624,12.354,huesca,0.27000000000000135
-2019,u. de cantabria (santander),12.734,12.355,santander,0.37899999999999956
-2019,universidad del país vasco (lejona),12.525,12.361,país vasco,0.1639999999999997
-2019,universidad jaume i,12.838,12.37,castellon de la plana,0.46799999999999997
-2019,u. de santiago de compostela,12.575,12.408,santiago de compostela,0.16699999999999982
-2019,universidad de salamanca,12.665,12.44,salamanca,0.22499999999999964
-2019,universidad de barcelona-clínico,12.546,12.458,barcelona,0.08799999999999919
-2019,universidad de valladolid,12.636,12.476,valladolid,0.15999999999999837
-2019,universidad de oviedo,12.79,12.487,oviedo,0.30299999999999905
-2019,u. pompeu fabra (barcelona),12.648,12.494,barcelona,0.15399999999999991
-2019,universidad de las palmas,12.832,12.498,las palmas,0.3340000000000014
-2019,universidad pública de navarra,12.707,12.5,navarra,0.20700000000000074
-2019,universidad de valencia,13.018,12.509,valencia,0.5090000000000003
-2019,u. de zaragoza (campus zaragoza),12.742,12.516,zaragoza,0.22600000000000087
-2019,u. de extremadura (badajoz),12.965,12.547,badajoz,0.41799999999999926
-2019,u. miguel hernández (s. juan de alicante),12.921,12.59,alicante,0.3309999999999995
-2019,universidad de murcia,13.013,12.644,murcia,0.3689999999999998
-2019,u. de c-la mancha (campus albacete),12.975,12.668,albacete,0.3070000000000004
-2019,u. de c-la mancha (campus c.real),12.87,12.679,ciudad real,0.19099999999999895
-2019,universidad de la laguna,13.027,12.706,la laguna,0.32099999999999973
-2019,universidad de cádiz,12.935,12.709,cádiz,0.22600000000000087
-2019,universidad de córdoba,12.97,12.791,córdoba,0.17900000000000027
-2019,urjc - campus alcorcón,12.884,12.794,madrid,0.08999999999999986
-2019,universidad de málaga,13.0,12.845,málaga,0.15499999999999936
-2019,universidad de sevilla,13.036,12.89,sevilla,0.14599999999999902
-2019,universidad de granada,13.14,12.904,granada,0.23600000000000065
-2019,universidad de alcalá,12.918,12.918,alcalá,0.0
-2019,universidad complutense de madrid,13.044,13.044,madrid,0.0
-2019,u. autónoma de madrid,13.075,13.056,madrid,0.019000000000000128
-2020,u. autónoma de madrid,13.426,13.345,madrid,0.08099999999999952
-2020,universidad complutense de madrid,13.408,13.304,madrid,0.1039999999999992
-2020,universidad de granada,13.5,13.27,granada,0.23000000000000043
-2020,universidad de sevilla,13.429,13.256,sevilla,0.17300000000000004
-2020,universidad de málaga,13.382,13.186,málaga,0.19599999999999973
-2020,universidad de murcia,13.442,13.152,murcia,0.2900000000000009
-2020,universidad de alcalá,13.288,13.134,alcalá,0.15399999999999991
-2020,universidad de córdoba,13.355,13.122,córdoba,0.23300000000000054
-2020,urjc - campus alcorcón,13.257,13.1,madrid,0.15700000000000003
-2020,universidad de cádiz,13.311,13.09,cádiz,0.22100000000000009
-2020,universidad de valencia,13.416,13.076,valencia,0.33999999999999986
-2020,u. miguel hernández (s. juan de alicante),13.309,13.038,alicante,0.270999999999999
-2020,u. de c-la mancha (campus c.real),13.281,13.014,ciudad real,0.26700000000000124
-2020,u. de c-la mancha (campus albacete),13.28,12.991,albacete,0.2889999999999997
-2020,universidad jaume i,13.256,12.962,castellon de la plana,0.2940000000000005
-2020,universidad de las palmas,13.078,12.951,las palmas,0.1269999999999989
-2020,universidad pública de navarra,13.318,12.949,navarra,0.3689999999999998
-2020,u. de extremadura (badajoz),13.43,12.902,badajoz,0.5280000000000005
-2020,universidad de oviedo,13.42,12.898,oviedo,0.5220000000000002
-2020,universidad de la laguna,13.196,12.85,la laguna,0.3460000000000001
-2020,universidad del país vasco (lejona),12.871,12.823,país vasco,0.04800000000000004
-2020,u. de santiago de compostela,13.031,12.748,santiago de compostela,0.28300000000000125
-2020,u. de zaragoza (campus zaragoza),13.15,12.735,zaragoza,0.4150000000000009
-2020,u. de cantabria (santander),13.242,12.727,santander,0.5150000000000006
-2020,u. de zaragoza (campus huesca),13.062,12.719,huesca,0.34299999999999997
-2020,universidad de salamanca,13.314,12.709,salamanca,0.6050000000000004
-2020,universidad de valladolid,13.17,12.708,valladolid,0.46199999999999974
-2020,universidad autónoma de barcelona,12.718,12.664,barcelona,0.05400000000000027
-2020,universidad de barcelona-bellvitge,12.99,12.66,barcelona,0.33000000000000007
-2020,universidad de barcelona-clínico,13.135,12.659,barcelona,0.4759999999999991
-2020,universidad de las islas baleares,13.106,12.636,palma de mallorca,0.47000000000000064
-2020,u. pompeu fabra (barcelona),13.042,12.598,barcelona,0.44399999999999906
-2020,universidad de gerona,12.672,12.549,gerona,0.12300000000000111
-2020,universidad rovira i virgili (reus),12.791,12.543,reus,0.2480000000000011
-2020,universidad de lérida,12.68,12.525,lérida,0.15499999999999936
-2021,universidad complutense de madrid,13.5,13.426,madrid,0.07399999999999984
-2021,universidad de sevilla,13.53,13.345,sevilla,0.18499999999999872
-2021,universidad de murcia,13.558,13.345,murcia,0.2129999999999992
-2021,universidad de granada,13.58,13.319,granada,0.26099999999999923
-2021,u. autónoma de madrid,13.463,13.309,madrid,0.15399999999999991
-2021,universidad de málaga,13.476,13.275,málaga,0.2010000000000005
-2021,universidad de córdoba,13.45,13.25,córdoba,0.1999999999999993
-2021,universidad de cádiz,13.43,13.232,cádiz,0.1980000000000004
-2021,u. miguel hernández (s. juan de alicante),13.419,13.15,alicante,0.26900000000000013
-2021,u. de c-la mancha (campus c.real),13.421,13.146,ciudad real,0.2749999999999986
-2021,universidad de alcalá,13.357,13.133,alcalá,0.2240000000000002
-2021,universidad de valladolid,13.332,13.121,valladolid,0.2110000000000003
-2021,urjc - campus alcorcón,13.35,13.119,madrid,0.23099999999999987
-2021,u. de c-la mancha (campus albacete),13.406,13.107,albacete,0.29900000000000126
-2021,u. de extremadura (badajoz),13.45,13.1,badajoz,0.34999999999999964
-2021,universidad pública de navarra,13.247,13.086,navarra,0.1609999999999996
-2021,universidad de valencia,13.475,13.074,valencia,0.4009999999999998
-2021,universidad jaume i,13.376,13.042,castellon de la plana,0.33399999999999963
-2021,u. de zaragoza (campus zaragoza),13.299,13.031,zaragoza,0.2679999999999989
-2021,universidad de barcelona-clínico,13.146,13.022,barcelona,0.12400000000000055
-2021,universidad de la laguna,13.304,12.983,la laguna,0.32099999999999973
-2021,universidad de las palmas,13.246,12.962,las palmas,0.2840000000000007
-2021,universidad de salamanca,13.303,12.952,salamanca,0.35100000000000087
-2021,u. de zaragoza (campus huesca),13.215,12.937,huesca,0.27800000000000047
-2021,u. de santiago de compostela,12.925,12.925,santiago de compostela,0.0
-2021,universidad de oviedo,13.358,12.916,oviedo,0.44200000000000017
-2021,u. de cantabria (santander),13.278,12.902,santander,0.3760000000000012
-2021,universidad de barcelona-bellvitge,12.988,12.878,barcelona,0.10999999999999943
-2021,universidad del país vasco (lejona),13.065,12.827,país vasco,0.23799999999999955
-2021,universidad de las islas baleares,13.225,12.76,palma de mallorca,0.46499999999999986
-2021,u. pompeu fabra (barcelona),13.098,12.758,barcelona,0.34000000000000163
-2021,universidad autónoma de barcelona,12.828,12.751,barcelona,0.07699999999999996
-2021,universidad de gerona,12.774,12.717,gerona,0.05699999999999861
-2021,universidad de lérida,12.799,12.711,lérida,0.08799999999999919
-2021,universidad rovira i virgili (reus),12.852,12.708,reus,0.14400000000000013
-2022,universidad complutense de madrid,13.541302334899285,13.467302334899285,,0.07399999999999984
-2022,universidad de sevilla,13.566611378821847,13.381611378821848,,0.18499999999999872
-2022,universidad de murcia,13.548673861096745,13.335673861096746,,0.2129999999999992
-2022,universidad de granada,13.583026959543716,13.322026959543717,,0.26099999999999923
-2022,u. autónoma de madrid,13.54885551774882,13.39485551774882,,0.15399999999999991
-2022,universidad de málaga,13.495227597295013,13.294227597295013,,0.2010000000000005
-2022,universidad de córdoba,13.459792184799667,13.259792184799668,,0.1999999999999993
-2022,universidad de cádiz,13.458750286744959,13.260750286744958,,0.1980000000000004
-2022,u. miguel hernández (s. juan de alicante),13.430225479532908,13.161225479532908,,0.26900000000000013
-2022,u. de c-la mancha (campus c.real),13.453345013517975,13.178345013517976,,0.2749999999999986
-2022,universidad de alcalá,13.434206816390287,13.210206816390286,,0.2240000000000002
-2022,universidad de valladolid,13.320528797569253,13.109528797569252,,0.2110000000000003
-2022,urjc - campus alcorcón,13.4182613143129,13.1872613143129,,0.23099999999999987
-2022,u. de c-la mancha (campus albacete),13.44774131258518,13.148741312585178,,0.29900000000000126
-2022,u. de extremadura (badajoz),13.468870398425338,13.118870398425338,,0.34999999999999964
-2022,universidad pública de navarra,13.179849419985885,13.018849419985886,,0.1609999999999996
-2022,universidad de valencia,13.527498046808404,13.126498046808404,,0.4009999999999998
-2022,universidad jaume i,13.39380889972162,13.05980889972162,,0.33399999999999963
-2022,u. de zaragoza (campus zaragoza),13.299725242438626,13.031725242438627,,0.2679999999999989
-2022,universidad de barcelona-clínico,13.14522014909744,13.02122014909744,,0.12400000000000055
-2022,universidad de la laguna,13.363918748933656,13.042918748933657,,0.32099999999999973
-2022,universidad de las palmas,13.250895714732081,12.96689571473208,,0.2840000000000007
-2022,universidad de salamanca,13.294398590376673,12.943398590376672,,0.35100000000000087
-2022,u. de zaragoza (campus huesca),13.207401467203539,12.929401467203538,,0.27800000000000047
-2022,u. de santiago de compostela,12.986736014710232,12.986736014710232,,0.0
-2022,universidad de oviedo,13.361089219446761,12.91908921944676,,0.44200000000000017
-2022,u. de cantabria (santander),13.276378840117616,12.900378840117614,,0.3760000000000012
-2022,universidad de barcelona-bellvitge,12.98600000004741,12.87600000004741,,0.10999999999999943
-2022,universidad del país vasco (lejona),13.052094819417846,12.814094819417846,,0.23799999999999955
-2022,universidad de las islas baleares,13.178116507805491,12.713116507805491,,0.46499999999999986
-2022,u. pompeu fabra (barcelona),13.126536915167662,12.78653691516766,,0.34000000000000163
-2022,universidad autónoma de barcelona,12.8357285301648,12.7587285301648,,0.07699999999999996
-2022,universidad de gerona,12.787787840487795,12.730787840487796,,0.05699999999999861
-2022,universidad de lérida,12.808024682900509,12.72002468290051,,0.08799999999999919
-2022,universidad rovira i virgili (reus),12.87453647919935,12.73053647919935,,0.14400000000000013
+index,year,university,final_grade,1_list,since_2010,city,covid_format_change,growth_1_list,growth_final_grade,diff_1_list_final_grade,CCAA,acom_code,avg_final_grade_CCAA
+0.0,2010,u. de lérida,11.04,11.654,True,lérida,0.0,0.0,0.0,0.614,Cataluña,09,
+1.0,2010,u. de gerona,11.07,11.61,True,gerona,0.0,0.0,0.0,0.54,Cataluña,09,
+2.0,2010,u. rovira i virgili (reus),11.142,11.708,True,reus,0.0,0.0,0.0,0.566,Cataluña,09,
+3.0,2010,u. de zaragoza (campus huesca),11.19,12.059,True,huesca,0.0,0.0,0.0,0.869,Aragón,02,11.5
+4.0,2010,u. autónoma de barcelona,11.195,11.59,True,barcelona,0.0,0.0,0.0,0.395,Cataluña,09,
+5.0,2010,u. de valladolid,11.204,12.29,True,valladolid,0.0,0.0,0.0,1.086,,,
+6.0,2010,u. de cantabria (santander),11.212,12.592,True,santander,0.0,0.0,0.0,1.38,,,
+7.0,2010,u. de santiago de compostela,11.23,11.8,True,santiago de compostela,0.0,0.0,0.0,0.57,,,
+8.0,2010,u. de extremadura (badajoz),11.236,12.5,True,badajoz,0.0,0.0,0.0,1.264,,,
+9.0,2010,u. de cádiz,11.286,12.12,True,cádiz,0.0,0.0,0.0,0.834,,,
+10.0,2010,u. pompeu fabra (barcelona),11.328,11.976,True,barcelona,0.0,0.0,0.0,0.648,Cataluña,09,
+11.0,2010,u. de barcelona-clínico,11.35,12.04,True,barcelona,0.0,0.0,0.0,0.69,Cataluña,09,
+12.0,2010,u. de salamanca,11.37,12.564,True,salamanca,0.0,0.0,0.0,1.194,,,
+13.0,2010,u. de zaragoza (campus zaragoza),11.39,12.185,True,zaragoza,0.0,0.0,0.0,0.795,Aragón,02,11.5
+14.0,2010,u. de c-la mancha (campus c.real),11.478,12.343,True,ciudad real,0.0,0.0,0.0,0.865,,,
+15.0,2010,u. de córdoba,11.496,12.295,True,córdoba,0.0,0.0,0.0,0.799,,,
+16.0,2010,u. del país vasco (lejona),11.503,11.922,True,país vasco,0.0,0.0,0.0,0.419,,,
+17.0,2010,u. de c-la mancha (campus albacete),11.53,12.246,True,albacete,0.0,0.0,0.0,0.716,,,
+18.0,2010,u. de sevilla,11.559,12.272,True,sevilla,0.0,0.0,0.0,0.713,,,
+19.0,2010,u. miguel hernández (s. juan de alicante),11.584,12.216,True,alicante,0.0,0.0,0.0,0.632,,,
+20.0,2010,u. de alcalá,11.631,11.862,True,alcalá,0.0,0.0,0.0,0.231,,,
+21.0,2010,u. de málaga,11.645,12.225,True,málaga,0.0,0.0,0.0,0.58,,,
+22.0,2010,u. de murcia,11.666,12.388,True,murcia,0.0,0.0,0.0,0.722,,,
+23.0,2010,u. de la laguna,11.68,12.2,True,la laguna,0.0,0.0,0.0,0.52,,,
+24.0,2010,urjc - campus alcorcón,11.7,11.867,True,madrid,0.0,0.0,0.0,0.167,Comunidad de Madrid,13,12.5
+25.0,2010,u. de valencia,11.732,12.247,True,valencia,0.0,0.0,0.0,0.515,,,
+26.0,2010,u. autónoma de madrid,11.84,12.036,True,madrid,0.0,0.0,0.0,0.196,Comunidad de Madrid,13,12.5
+27.0,2010,u. de las palmas,11.849,12.312,True,las palmas,0.0,0.0,0.0,0.463,,,
+28.0,2010,u. de granada,11.959,12.503,True,granada,0.0,0.0,0.0,0.544,,,
+29.0,2010,u. complutense de madrid,12.022,12.189,True,madrid,0.0,0.0,0.0,0.167,Comunidad de Madrid,13,12.5
+30.0,2010,u. de oviedo,12.088,12.579,True,oviedo,0.0,0.0,0.0,0.491,,,
+0.0,2011,u. de gerona,11.26,11.619,True,gerona,0.0,0.001,0.017,0.359,Cataluña,09,
+1.0,2011,u. de lérida,11.316,11.65,True,lérida,0.0,-0.0,0.025,0.334,Cataluña,09,
+2.0,2011,u. del país vasco (lejona),11.346,11.747,True,país vasco,0.0,-0.015,-0.014,0.401,,,
+3.0,2011,u. rovira i virgili (reus),11.406,11.786,True,reus,0.0,0.007,0.024,0.38,Cataluña,09,
+4.0,2011,u. autónoma de barcelona,11.482,11.726,True,barcelona,0.0,0.012,0.026,0.244,Cataluña,09,
+5.0,2011,u. de zaragoza (campus huesca),11.587,12.02,True,huesca,0.0,-0.003,0.035,0.433,Aragón,02,11.5
+6.0,2011,u. de santiago de compostela,11.598,12.014,True,santiago de compostela,0.0,0.018,0.033,0.416,,,
+7.0,2011,u. de cantabria (santander),11.632,12.437,True,santander,0.0,-0.012,0.037,0.805,,,
+8.0,2011,u. pompeu fabra (barcelona),11.714,12.04,True,barcelona,0.0,0.005,0.034,0.326,Cataluña,09,
+9.0,2011,u. de zaragoza (campus zaragoza),11.725,12.134,True,zaragoza,0.0,-0.004,0.029,0.409,Aragón,02,11.5
+10.0,2011,u. jaume i,11.73,12.332,False,castellon de la plana,0.0,0.0,0.0,0.602,,,
+11.0,2011,u. de extremadura (badajoz),11.758,12.565,True,badajoz,0.0,0.005,0.046,0.807,,,
+12.0,2011,u. de valladolid,11.79,12.156,True,valladolid,0.0,-0.011,0.052,0.366,,,
+13.0,2011,u. de barcelona-clínico,11.867,12.158,True,barcelona,0.0,0.01,0.046,0.291,Cataluña,09,
+14.0,2011,u. de salamanca,11.867,12.2,True,salamanca,0.0,-0.029,0.044,0.333,,,
+15.0,2011,u. de cádiz,11.921,12.366,True,cádiz,0.0,0.02,0.056,0.445,,,
+16.0,2011,u. de c-la mancha (campus albacete),11.964,12.36,True,albacete,0.0,0.009,0.038,0.396,,,
+17.0,2011,u. de la laguna,11.977,12.42,True,la laguna,0.0,0.018,0.025,0.443,,,
+18.0,2011,u. de valencia,11.986,12.41,True,valencia,0.0,0.013,0.022,0.424,,,
+19.0,2011,u. de murcia,11.987,12.602,True,murcia,0.0,0.017,0.028,0.615,,,
+20.0,2011,u. de sevilla,12.022,12.451,True,sevilla,0.0,0.015,0.04,0.429,,,
+21.0,2011,u. miguel hernández (s. juan de alicante),12.022,12.52,True,alicante,0.0,0.025,0.038,0.498,,,
+22.0,2011,u. de alcalá,12.023,12.125,True,alcalá,0.0,0.022,0.034,0.102,,,
+23.0,2011,u. de c-la mancha (campus c.real),12.04,12.4,True,ciudad real,0.0,0.005,0.049,0.36,,,
+24.0,2011,urjc - campus alcorcón,12.064,12.143,True,madrid,0.0,0.023,0.031,0.079,Comunidad de Madrid,13,12.5
+25.0,2011,u. de córdoba,12.172,12.556,True,córdoba,0.0,0.021,0.059,0.384,,,
+26.0,2011,u. de las palmas,12.195,12.411,True,las palmas,0.0,0.008,0.029,0.216,,,
+27.0,2011,u. autónoma de madrid,12.2,12.308,True,madrid,0.0,0.023,0.03,0.108,Comunidad de Madrid,13,12.5
+28.0,2011,u. de málaga,12.204,12.55,True,málaga,0.0,0.027,0.048,0.346,,,
+29.0,2011,u. de oviedo,12.292,12.692,True,oviedo,0.0,0.009,0.017,0.4,,,
+30.0,2011,u. complutense de madrid,12.354,12.469,True,madrid,0.0,0.023,0.028,0.115,Comunidad de Madrid,13,12.5
+31.0,2011,u. de granada,12.36,12.79,True,granada,0.0,0.023,0.034,0.43,,,
+0.0,2012,u. rovira i virgili (reus),11.668,12.02,True,reus,0.0,0.02,0.023,0.352,Cataluña,09,
+1.0,2012,u. de gerona,11.672,11.946,True,gerona,0.0,0.028,0.037,0.274,Cataluña,09,
+2.0,2012,u. de lérida,11.68,11.944,True,lérida,0.0,0.025,0.032,0.264,Cataluña,09,
+3.0,2012,u. autónoma de barcelona,11.765,12.022,True,barcelona,0.0,0.025,0.025,0.257,Cataluña,09,
+4.0,2012,u. de santiago de compostela,11.78,12.179,True,santiago de compostela,0.0,0.014,0.016,0.399,,,
+5.0,2012,u. de zaragoza (campus huesca),11.796,12.268,True,huesca,0.0,0.021,0.018,0.472,Aragón,02,11.5
+6.0,2012,u. de barcelona-clínico,11.8,12.332,True,barcelona,0.0,0.014,-0.006,0.532,Cataluña,09,
+7.0,2012,u. pompeu fabra (barcelona),11.808,12.242,True,barcelona,0.0,0.017,0.008,0.434,Cataluña,09,
+8.0,2012,u. de cantabria (santander),11.81,12.504,True,santander,0.0,0.005,0.015,0.694,,,
+9.0,2012,u. del país vasco (lejona),11.83,12.119,True,país vasco,0.0,0.032,0.043,0.289,,,
+10.0,2012,u. de valladolid,11.872,12.31,True,valladolid,0.0,0.013,0.007,0.438,,,
+11.0,2012,u. de zaragoza (campus zaragoza),11.906,12.376,True,zaragoza,0.0,0.02,0.015,0.47,Aragón,02,11.5
+12.0,2012,u. jaume i,11.944,12.44,False,castellon de la plana,0.0,0.009,0.018,0.496,,,
+13.0,2012,u. de extremadura (badajoz),11.95,12.4,True,badajoz,0.0,-0.013,0.016,0.45,,,
+14.0,2012,u. de salamanca,11.957,12.37,True,salamanca,0.0,0.014,0.008,0.413,,,
+15.0,2012,u. de cádiz,12.01,12.424,True,cádiz,0.0,0.005,0.007,0.414,,,
+16.0,2012,u. de la laguna,12.053,12.57,True,la laguna,0.0,0.012,0.006,0.517,,,
+17.0,2012,u. de c-la mancha (campus c.real),12.068,12.458,True,ciudad real,0.0,0.005,0.002,0.39,,,
+18.0,2012,urjc - campus alcorcón,12.107,12.189,True,madrid,0.0,0.004,0.004,0.082,Comunidad de Madrid,13,12.5
+19.0,2012,u. de c-la mancha (campus albacete),12.115,12.456,True,albacete,0.0,0.008,0.013,0.341,,,
+20.0,2012,u. miguel hernández (s. juan de alicante),12.131,12.526,True,alicante,0.0,0.0,0.009,0.395,,,
+21.0,2012,u. de sevilla,12.136,12.503,True,sevilla,0.0,0.004,0.009,0.367,,,
+22.0,2012,u. de alcalá,12.178,12.229,True,alcalá,0.0,0.009,0.013,0.051,,,
+23.0,2012,u. de las palmas,12.178,12.429,True,las palmas,0.0,0.001,-0.001,0.251,,,
+24.0,2012,u. de valencia,12.182,12.546,True,valencia,0.0,0.011,0.016,0.364,,,
+25.0,2012,u. de córdoba,12.196,12.555,True,córdoba,0.0,-0.0,0.002,0.359,,,
+26.0,2012,u. de málaga,12.197,12.554,True,málaga,0.0,0.0,-0.001,0.357,,,
+27.0,2012,u. de oviedo,12.226,12.692,True,oviedo,0.0,0.0,-0.005,0.466,,,
+28.0,2012,u. de murcia,12.29,12.808,True,murcia,0.0,0.016,0.025,0.518,,,
+29.0,2012,u. autónoma de madrid,12.3,12.424,True,madrid,0.0,0.009,0.008,0.124,Comunidad de Madrid,13,12.5
+30.0,2012,u. de granada,12.449,12.822,True,granada,0.0,0.003,0.007,0.373,,,
+31.0,2012,u. complutense de madrid,12.499,12.499,True,madrid,0.0,0.002,0.012,0.0,Comunidad de Madrid,13,12.5
+0.0,2013,u. de lérida,11.73,12.0,True,lérida,0.0,0.005,0.004,0.27,Cataluña,09,
+1.0,2013,u. rovira i virgili (reus),11.752,12.013,True,reus,0.0,-0.001,0.007,0.261,Cataluña,09,
+2.0,2013,u. de gerona,11.753,11.99,True,gerona,0.0,0.004,0.007,0.237,Cataluña,09,
+3.0,2013,u. autónoma de barcelona,11.851,12.086,True,barcelona,0.0,0.005,0.007,0.235,Cataluña,09,
+4.0,2013,u. de zaragoza (campus huesca),11.852,12.352,True,huesca,0.0,0.007,0.005,0.5,Aragón,02,11.5
+5.0,2013,u. de cantabria (santander),11.892,12.54,True,santander,0.0,0.003,0.007,0.648,,,
+6.0,2013,u. pompeu fabra (barcelona),11.9,12.342,True,barcelona,0.0,0.008,0.008,0.442,Cataluña,09,
+7.0,2013,u. de zaragoza (campus zaragoza),11.905,12.425,True,zaragoza,0.0,0.004,-0.0,0.52,Aragón,02,11.5
+8.0,2013,u. de valladolid,11.912,12.325,True,valladolid,0.0,0.001,0.003,0.413,,,
+9.0,2013,u. del país vasco (lejona),11.914,12.079,True,país vasco,0.0,-0.003,0.007,0.165,,,
+10.0,2013,u. jaume i,11.931,12.334,False,castellon de la plana,0.0,-0.009,-0.001,0.403,,,
+11.0,2013,u. de santiago de compostela,11.951,12.268,True,santiago de compostela,0.0,0.007,0.015,0.317,,,
+12.0,2013,u. de salamanca,11.999,12.381,True,salamanca,0.0,0.001,0.004,0.382,,,
+13.0,2013,u. de extremadura (badajoz),12.028,12.452,True,badajoz,0.0,0.004,0.007,0.424,,,
+14.0,2013,u. de cádiz,12.056,12.455,True,cádiz,0.0,0.002,0.004,0.399,,,
+15.0,2013,u. de barcelona-clínico,12.089,12.408,True,barcelona,0.0,0.006,0.024,0.319,Cataluña,09,
+16.0,2013,u. de c-la mancha (campus c.real),12.1,12.505,True,ciudad real,0.0,0.004,0.003,0.405,,,
+17.0,2013,u. de alcalá,12.1,12.396,True,alcalá,0.0,0.014,-0.006,0.296,,,
+18.0,2013,u. miguel hernández (s. juan de alicante),12.103,12.43,True,alicante,0.0,-0.008,-0.002,0.327,,,
+19.0,2013,u. de la laguna,12.123,12.48,True,la laguna,0.0,-0.007,0.006,0.357,,,
+20.0,2013,urjc - campus alcorcón,12.136,12.343,True,madrid,0.0,0.013,0.002,0.207,Comunidad de Madrid,13,12.5
+21.0,2013,u. de valencia,12.146,12.523,True,valencia,0.0,-0.002,-0.003,0.377,,,
+22.0,2013,u. de c-la mancha (campus albacete),12.17,12.558,True,albacete,0.0,0.008,0.005,0.388,,,
+23.0,2013,u. de córdoba,12.233,12.538,True,córdoba,0.0,-0.001,0.003,0.305,,,
+24.0,2013,u. de sevilla,12.258,12.537,True,sevilla,0.0,0.003,0.01,0.279,,,
+25.0,2013,u. de las palmas,12.26,12.592,True,las palmas,0.0,0.013,0.007,0.332,,,
+26.0,2013,u. de málaga,12.307,12.627,True,málaga,0.0,0.006,0.009,0.32,,,
+27.0,2013,u. de murcia,12.346,12.743,True,murcia,0.0,-0.005,0.005,0.397,,,
+28.0,2013,u. autónoma de madrid,12.429,12.558,True,madrid,0.0,0.011,0.01,0.129,Comunidad de Madrid,13,12.5
+29.0,2013,u. complutense de madrid,12.435,12.571,True,madrid,0.0,0.006,-0.005,0.136,Comunidad de Madrid,13,12.5
+30.0,2013,u. de oviedo,12.458,12.694,True,oviedo,0.0,0.0,0.019,0.236,,,
+31.0,2013,u. de granada,12.516,12.764,True,granada,0.0,-0.005,0.005,0.248,,,
+0.0,2014,u. de lérida,11.907,12.044,True,lérida,0.0,0.004,0.015,0.137,Cataluña,09,
+1.0,2014,u. de gerona,11.919,12.058,True,gerona,0.0,0.006,0.014,0.139,Cataluña,09,
+2.0,2014,u. rovira i virgili (reus),11.968,12.042,True,reus,0.0,0.002,0.018,0.074,Cataluña,09,
+3.0,2014,u. del país vasco (lejona),12.023,12.111,True,país vasco,0.0,0.003,0.009,0.088,,,
+4.0,2014,u. de zaragoza (campus huesca),12.032,12.276,True,huesca,0.0,-0.006,0.015,0.244,Aragón,02,11.5
+5.0,2014,u. autónoma de barcelona,12.063,12.152,True,barcelona,0.0,0.005,0.018,0.089,Cataluña,09,
+6.0,2014,u. de zaragoza (campus zaragoza),12.053,12.4,True,zaragoza,0.0,-0.002,0.012,0.347,Aragón,02,11.5
+7.0,2014,u. de cantabria (santander),12.068,12.54,True,santander,0.0,0.0,0.015,0.472,,,
+8.0,2014,u. de valladolid,12.09,12.312,True,valladolid,0.0,-0.001,0.015,0.222,,,
+9.0,2014,u. de santiago de compostela,12.102,12.332,True,santiago de compostela,0.0,0.005,0.013,0.23,,,
+10.0,2014,u. de salamanca,12.107,12.413,True,salamanca,0.0,0.003,0.009,0.306,,,
+11.0,2014,u. jaume i,12.118,12.422,False,castellon de la plana,0.0,0.007,0.016,0.304,,,
+12.0,2014,u. de c-la mancha (campus c.real),12.156,12.53,True,ciudad real,0.0,0.002,0.005,0.374,,,
+13.0,2014,u. de c-la mancha (campus albacete),12.19,12.56,True,albacete,0.0,0.0,0.002,0.37,,,
+14.0,2014,urjc - campus alcorcón,12.285,12.382,True,madrid,0.0,0.003,0.012,0.097,Comunidad de Madrid,13,12.5
+15.0,2014,u. pompeu fabra (barcelona),12.288,12.356,True,barcelona,0.0,0.001,0.033,0.068,Cataluña,09,
+16.0,2014,u. miguel hernández (s. juan de alicante),12.304,12.514,True,alicante,0.0,0.007,0.017,0.21,,,
+17.0,2014,u. de extremadura (badajoz),12.306,12.682,True,badajoz,0.0,0.018,0.023,0.376,,,
+18.0,2014,u. de cádiz,12.35,12.603,True,cádiz,0.0,0.012,0.024,0.253,,,
+19.0,2014,u. de valencia,12.356,12.656,True,valencia,0.0,0.011,0.017,0.3,,,
+20.0,2014,u. de alcalá,12.376,12.422,True,alcalá,0.0,0.002,0.023,0.046,,,
+21.0,2014,u. de murcia,12.389,12.854,True,murcia,0.0,0.009,0.003,0.465,,,
+22.0,2014,u. de barcelona-clínico,12.394,12.46,True,barcelona,0.0,0.004,0.025,0.066,Cataluña,09,
+23.0,2014,u. de oviedo,12.408,12.692,True,oviedo,0.0,-0.0,-0.004,0.284,,,
+24.0,2014,u. de sevilla,12.44,12.653,True,sevilla,0.0,0.009,0.015,0.213,,,
+25.0,2014,u. de córdoba,12.466,12.683,True,córdoba,0.0,0.012,0.019,0.217,,,
+26.0,2014,u. de málaga,12.473,12.72,True,málaga,0.0,0.007,0.013,0.247,,,
+27.0,2014,u. de las palmas,12.509,12.78,True,las palmas,0.0,0.015,0.02,0.271,,,
+28.0,2014,u. autónoma de madrid,12.558,12.652,True,madrid,0.0,0.007,0.01,0.094,Comunidad de Madrid,13,12.5
+29.0,2014,u. de la laguna,12.58,12.793,True,la laguna,0.0,0.025,0.038,0.213,,,
+30.0,2014,u. complutense de madrid,12.615,12.617,True,madrid,0.0,0.004,0.014,0.002,Comunidad de Madrid,13,12.5
+31.0,2014,u. de granada,12.697,12.933,True,granada,0.0,0.013,0.014,0.236,,,
+0.0,2015,u. de lérida,12.101,12.266,True,lérida,0.0,0.018,0.016,0.165,Cataluña,09,
+1.0,2015,u. rovira i virgili (reus),12.108,12.236,True,reus,0.0,0.016,0.012,0.128,Cataluña,09,
+2.0,2015,u. de cantabria (santander),12.178,12.572,True,santander,0.0,0.003,0.009,0.394,,,
+3.0,2015,u. de santiago de compostela,12.178,12.332,True,santiago de compostela,0.0,0.0,0.006,0.154,,,
+4.0,2015,u. de gerona,12.182,12.242,True,gerona,0.0,0.015,0.022,0.06,Cataluña,09,
+5.0,2015,u. del país vasco (lejona),12.22,12.268,True,país vasco,0.0,0.013,0.016,0.048,,,
+6.0,2015,u. de zaragoza (campus huesca),12.234,12.456,True,huesca,0.0,0.015,0.017,0.222,Aragón,02,11.5
+7.0,2015,u. de salamanca,12.241,12.498,True,salamanca,0.0,0.007,0.011,0.257,,,
+8.0,2015,u. de valladolid,12.307,12.44,True,valladolid,0.0,0.01,0.018,0.133,,,
+9.0,2015,u. jaume i,12.32,12.574,False,castellon de la plana,0.0,0.012,0.017,0.254,,,
+10.0,2015,u. de oviedo,12.342,12.618,True,oviedo,0.0,-0.006,-0.005,0.276,,,
+11.0,2015,u. de extremadura (badajoz),12.36,12.84,True,badajoz,0.0,0.012,0.004,0.48,,,
+12.0,2015,u. autónoma de barcelona,12.364,12.394,True,barcelona,0.0,0.02,0.025,0.03,Cataluña,09,
+13.0,2015,u. de zaragoza (campus zaragoza),12.404,12.547,True,zaragoza,0.0,0.012,0.029,0.143,Aragón,02,11.5
+14.0,2015,u. de c-la mancha (campus albacete),12.424,12.694,True,albacete,0.0,0.011,0.019,0.27,,,
+15.0,2015,u. de c-la mancha (campus c.real),12.433,12.678,True,ciudad real,0.0,0.012,0.023,0.245,,,
+16.0,2015,u. miguel hernández (s. juan de alicante),12.438,12.644,True,alicante,0.0,0.01,0.011,0.206,,,
+17.0,2015,urjc - campus alcorcón,12.455,12.536,True,madrid,0.0,0.012,0.014,0.081,Comunidad de Madrid,13,12.5
+18.0,2015,u. de alcalá,12.472,12.543,True,alcalá,0.0,0.01,0.008,0.071,,,
+19.0,2015,u. de cádiz,12.482,12.719,True,cádiz,0.0,0.009,0.011,0.237,,,
+20.0,2015,u. de valencia,12.514,12.774,True,valencia,0.0,0.009,0.013,0.26,,,
+21.0,2015,u. de córdoba,12.569,12.736,True,córdoba,0.0,0.004,0.008,0.167,,,
+22.0,2015,u. de la laguna,12.58,12.854,True,la laguna,0.0,0.005,0.0,0.274,,,
+23.0,2015,u. pompeu fabra (barcelona),12.598,12.632,True,barcelona,0.0,0.022,0.025,0.034,Cataluña,09,
+24.0,2015,u. de málaga,12.606,12.766,True,málaga,0.0,0.004,0.011,0.16,,,
+25.0,2015,u. de barcelona-clínico,12.642,12.698,True,barcelona,0.0,0.019,0.02,0.056,Cataluña,09,
+26.0,2015,u. de sevilla,12.645,12.798,True,sevilla,0.0,0.011,0.016,0.153,,,
+27.0,2015,u. autónoma de madrid,12.651,12.819,True,madrid,0.0,0.013,0.007,0.168,Comunidad de Madrid,13,12.5
+28.0,2015,u. de murcia,12.661,12.95,True,murcia,0.0,0.007,0.022,0.289,,,
+29.0,2015,u. de granada,12.669,12.947,True,granada,0.0,0.001,-0.002,0.278,,,
+30.0,2015,u. complutense de madrid,12.697,12.697,True,madrid,0.0,0.006,0.007,0.0,Comunidad de Madrid,13,12.5
+31.0,2015,u. de las palmas,12.791,12.839,True,las palmas,0.0,0.005,0.023,0.048,,,
+0.0,2016,u. de lérida,12.124,12.305,True,lérida,0.0,0.003,0.002,0.181,Cataluña,09,
+1.0,2016,u. de las islas baleares,12.144,12.534,False,palma de mallorca,0.0,0.0,0.0,0.39,,,
+2.0,2016,u. de gerona,12.168,12.303,True,gerona,0.0,0.005,-0.001,0.135,Cataluña,09,
+3.0,2016,u. rovira i virgili (reus),12.164,12.296,True,reus,0.0,0.005,0.005,0.132,Cataluña,09,
+4.0,2016,u. autónoma de barcelona,12.185,12.348,True,barcelona,0.0,-0.004,-0.014,0.163,Cataluña,09,
+5.0,2016,u. de barcelona-clínico,12.196,12.621,True,barcelona,0.0,-0.006,-0.035,0.425,Cataluña,09,
+6.0,2016,u. de zaragoza (campus huesca),12.236,12.588,True,huesca,0.0,0.011,0.0,0.352,Aragón,02,11.5
+7.0,2016,u. pompeu fabra (barcelona),12.264,12.62,True,barcelona,0.0,-0.001,-0.027,0.356,Cataluña,09,
+8.0,2016,u. de santiago de compostela,12.278,12.61,True,santiago de compostela,0.0,0.023,0.008,0.332,,,
+9.0,2016,u. de cantabria (santander),12.298,12.726,True,santander,0.0,0.012,0.01,0.428,,,
+10.0,2016,u. de valladolid,12.3,12.592,True,valladolid,0.0,0.012,-0.001,0.292,,,
+11.0,2016,u. de salamanca,12.354,12.713,True,salamanca,0.0,0.017,0.009,0.359,,,
+12.0,2016,u. jaume i,12.376,12.754,False,castellon de la plana,0.0,0.014,0.005,0.378,,,
+13.0,2016,u. de zaragoza (campus zaragoza),12.382,12.683,True,zaragoza,0.0,0.011,-0.002,0.301,Aragón,02,11.5
+14.0,2016,u. del país vasco (lejona),12.392,12.444,True,país vasco,0.0,0.014,0.014,0.052,,,
+15.0,2016,u. de oviedo,12.404,12.762,True,oviedo,0.0,0.011,0.005,0.358,,,
+16.0,2016,urjc - campus alcorcón,12.451,12.62,True,madrid,0.0,0.007,-0.0,0.169,Comunidad de Madrid,13,12.5
+17.0,2016,u. miguel hernández (s. juan de alicante),12.501,12.848,True,alicante,0.0,0.016,0.005,0.347,,,
+18.0,2016,u. de c-la mancha (campus c.real),12.517,12.749,True,ciudad real,0.0,0.006,0.007,0.232,,,
+19.0,2016,u. de c-la mancha (campus albacete),12.525,12.768,True,albacete,0.0,0.006,0.008,0.243,,,
+20.0,2016,u. de extremadura (badajoz),12.532,13.082,True,badajoz,0.0,0.019,0.014,0.55,,,
+21.0,2016,u. de alcalá,12.532,12.575,True,alcalá,0.0,0.003,0.005,0.043,,,
+22.0,2016,u. de cádiz,12.55,12.831,True,cádiz,0.0,0.009,0.005,0.281,,,
+23.0,2016,u. de valencia,12.584,12.856,True,valencia,0.0,0.006,0.006,0.272,,,
+24.0,2016,u. complutense de madrid,12.599,12.742,True,madrid,0.0,0.004,-0.008,0.143,Comunidad de Madrid,13,12.5
+25.0,2016,u. de la laguna,12.603,12.888,True,la laguna,0.0,0.003,0.002,0.285,,,
+26.0,2016,u. de málaga,12.665,12.878,True,málaga,0.0,0.009,0.005,0.213,,,
+27.0,2016,u. de córdoba,12.684,12.874,True,córdoba,0.0,0.011,0.009,0.19,,,
+28.0,2016,u. autónoma de madrid,12.686,12.843,True,madrid,0.0,0.002,0.003,0.157,Comunidad de Madrid,13,12.5
+29.0,2016,u. de granada,12.772,13.048,True,granada,0.0,0.008,0.008,0.276,,,
+30.0,2016,u. de murcia,12.775,13.046,True,murcia,0.0,0.007,0.009,0.271,,,
+31.0,2016,u. de sevilla,12.784,12.97,True,sevilla,0.0,0.013,0.011,0.186,,,
+32.0,2016,u. de las palmas,12.786,12.978,True,las palmas,0.0,0.011,-0.0,0.192,,,
+0.0,2017,u. rovira i virgili (reus),12.08,12.346,True,reus,0.0,0.004,-0.007,0.266,Cataluña,09,
+1.0,2017,u. de lérida,12.11,12.311,True,lérida,0.0,0.0,-0.001,0.201,Cataluña,09,
+2.0,2017,u. de las islas baleares,12.112,12.744,False,palma de mallorca,0.0,0.017,-0.003,0.632,,,
+3.0,2017,u. de gerona,12.14,12.31,True,gerona,0.0,0.001,-0.002,0.17,Cataluña,09,
+4.0,2017,u. de cantabria (santander),12.183,12.708,True,santander,0.0,-0.001,-0.009,0.525,,,
+5.0,2017,u. autónoma de barcelona,12.202,12.365,True,barcelona,0.0,0.001,0.001,0.163,Cataluña,09,
+6.0,2017,u. de valladolid,12.21,12.565,True,valladolid,0.0,-0.002,-0.007,0.355,,,
+7.0,2017,u. de extremadura (badajoz),12.236,12.906,True,badajoz,0.0,-0.013,-0.024,0.67,,,
+8.0,2017,u. de santiago de compostela,12.286,12.575,True,santiago de compostela,0.0,-0.003,0.001,0.289,,,
+9.0,2017,u. de zaragoza (campus huesca),12.301,12.589,True,huesca,0.0,0.0,0.005,0.288,Aragón,02,11.5
+10.0,2017,u. de salamanca,12.321,12.655,True,salamanca,0.0,-0.005,-0.003,0.334,,,
+11.0,2017,u. del país vasco (lejona),12.331,12.4,True,país vasco,0.0,-0.004,-0.005,0.069,,,
+12.0,2017,u. de barcelona-clínico,12.362,12.639,True,barcelona,0.0,0.001,0.014,0.277,Cataluña,09,
+13.0,2017,u. de c-la mancha (campus c.real),12.365,12.745,True,ciudad real,0.0,-0.0,-0.012,0.38,,,
+14.0,2017,u. de oviedo,12.37,12.84,True,oviedo,0.0,0.006,-0.003,0.47,,,
+15.0,2017,u. pompeu fabra (barcelona),12.422,12.84,True,barcelona,0.0,0.017,0.013,0.418,Cataluña,09,
+16.0,2017,u. de c-la mancha (campus albacete),12.45,12.801,True,albacete,0.0,0.003,-0.006,0.351,,,
+17.0,2017,u. de zaragoza (campus zaragoza),12.45,12.695,True,zaragoza,0.0,0.001,0.005,0.245,Aragón,02,11.5
+18.0,2017,u. jaume i,12.464,12.78,False,castellon de la plana,0.0,0.002,0.007,0.316,,,
+19.0,2017,u. de cádiz,12.483,12.795,True,cádiz,0.0,-0.003,-0.005,0.312,,,
+20.0,2017,u. de la laguna,12.547,12.931,True,la laguna,0.0,0.003,-0.004,0.384,,,
+21.0,2017,u. de córdoba,12.623,12.873,True,córdoba,0.0,-0.0,-0.005,0.25,,,
+22.0,2017,u. miguel hernández (s. juan de alicante),12.624,12.851,True,alicante,0.0,0.0,0.01,0.227,,,
+23.0,2017,u. de málaga,12.631,12.856,True,málaga,0.0,-0.002,-0.003,0.225,,,
+24.0,2017,u. de las palmas,12.656,12.924,True,las palmas,0.0,-0.004,-0.01,0.268,,,
+25.0,2017,u. de valencia,12.664,12.99,True,valencia,0.0,0.01,0.006,0.326,,,
+26.0,2017,urjc - campus alcorcón,12.693,12.793,True,madrid,0.0,0.014,0.019,0.1,Comunidad de Madrid,13,12.5
+27.0,2017,u. de sevilla,12.725,12.921,True,sevilla,0.0,-0.004,-0.005,0.196,,,
+28.0,2017,u. de alcalá,12.743,12.747,True,alcalá,0.0,0.014,0.017,0.004,,,
+29.0,2017,u. de granada,12.75,13.026,True,granada,0.0,-0.002,-0.002,0.276,,,
+30.0,2017,u. de murcia,12.819,13.176,True,murcia,0.0,0.01,0.003,0.357,,,
+31.0,2017,u. complutense de madrid,12.871,12.871,True,madrid,0.0,0.01,0.022,0.0,Comunidad de Madrid,13,12.5
+32.0,2017,u. autónoma de madrid,12.96,13.11,True,madrid,0.0,0.021,0.022,0.15,Comunidad de Madrid,13,12.5
+0.0,2018,u. de las islas baleares,12.12,12.568,False,palma de mallorca,0.0,-0.014,0.001,0.448,,,
+1.0,2018,u. de lérida,12.128,12.264,True,lérida,0.0,-0.004,0.001,0.136,Cataluña,09,
+2.0,2018,u. rovira i virgili (reus),12.13,12.362,True,reus,0.0,0.001,0.004,0.232,Cataluña,09,
+3.0,2018,u. de gerona,12.17,12.258,True,gerona,0.0,-0.004,0.002,0.088,Cataluña,09,
+4.0,2018,u. autónoma de barcelona,12.253,12.334,True,barcelona,0.0,-0.003,0.004,0.081,Cataluña,09,
+5.0,2018,u. de cantabria (santander),12.324,12.68,True,santander,0.0,-0.002,0.012,0.356,,,
+6.0,2018,u. del país vasco (lejona),12.332,12.407,True,país vasco,0.0,0.001,0.0,0.075,,,
+7.0,2018,u. de santiago de compostela,12.34,12.531,True,santiago de compostela,0.0,-0.003,0.004,0.191,,,
+8.0,2018,u. de valladolid,12.37,12.606,True,valladolid,0.0,0.003,0.013,0.236,,,
+9.0,2018,u. de zaragoza (campus huesca),12.379,12.61,True,huesca,0.0,0.002,0.006,0.231,Aragón,02,11.5
+10.0,2018,u. de extremadura (badajoz),12.386,12.981,True,badajoz,0.0,0.006,0.012,0.595,,,
+11.0,2018,u. de salamanca,12.386,12.668,True,salamanca,0.0,0.001,0.005,0.282,,,
+12.0,2018,u. pompeu fabra (barcelona),12.396,12.704,True,barcelona,0.0,-0.011,-0.002,0.308,Cataluña,09,
+13.0,2018,u. de c-la mancha (campus c.real),12.41,12.818,True,ciudad real,0.0,0.006,0.004,0.408,,,
+14.0,2018,u. de cádiz,12.451,12.801,True,cádiz,0.0,0.0,-0.003,0.35,,,
+15.0,2018,u. de oviedo,12.456,12.828,True,oviedo,0.0,-0.001,0.007,0.372,,,
+16.0,2018,u. de barcelona-clínico,12.475,12.641,True,barcelona,0.0,0.0,0.009,0.166,Cataluña,09,
+17.0,2018,u. de la laguna,12.491,12.859,True,la laguna,0.0,-0.006,-0.004,0.368,,,
+18.0,2018,u. de zaragoza (campus zaragoza),12.511,12.732,True,zaragoza,0.0,0.003,0.005,0.221,Aragón,02,11.5
+19.0,2018,u. de córdoba,12.555,12.842,True,córdoba,0.0,-0.002,-0.005,0.287,,,
+20.0,2018,u. de murcia,12.605,13.017,True,murcia,0.0,-0.012,-0.017,0.412,,,
+21.0,2018,u. de málaga,12.612,12.87,True,málaga,0.0,0.001,-0.002,0.258,,,
+22.0,2018,u. de las palmas,12.625,12.859,True,las palmas,0.0,-0.005,-0.002,0.234,,,
+23.0,2018,u. jaume i,12.628,12.948,False,castellon de la plana,0.0,0.013,0.013,0.32,,,
+24.0,2018,u. de granada,12.671,13.015,True,granada,0.0,-0.001,-0.006,0.344,,,
+25.0,2018,u. de c-la mancha (campus albacete),12.674,12.918,True,albacete,0.0,0.009,0.018,0.244,,,
+26.0,2018,u. de sevilla,12.723,12.926,True,sevilla,0.0,0.0,-0.0,0.203,,,
+27.0,2018,urjc - campus alcorcón,12.746,12.792,True,madrid,0.0,-0.0,0.004,0.046,Comunidad de Madrid,13,12.5
+28.0,2018,u. miguel hernández (s. juan de alicante),12.766,13.026,True,alicante,0.0,0.014,0.011,0.26,,,
+29.0,2018,u. de alcalá,12.811,12.811,True,alcalá,0.0,0.005,0.005,0.0,,,
+30.0,2018,u. de valencia,12.812,13.058,True,valencia,0.0,0.005,0.012,0.246,,,
+31.0,2018,u. autónoma de madrid,12.936,13.124,True,madrid,0.0,0.001,-0.002,0.188,Comunidad de Madrid,13,12.5
+32.0,2018,u. complutense de madrid,12.966,12.966,True,madrid,0.0,0.007,0.007,0.0,Comunidad de Madrid,13,12.5
+0.0,2019,u. de lérida,12.18,12.293,True,lérida,0.0,0.002,0.004,0.113,Cataluña,09,
+1.0,2019,u. rovira i virgili (reus),12.182,12.329,True,reus,0.0,-0.003,0.004,0.147,Cataluña,09,
+2.0,2019,u. de gerona,12.197,12.275,True,gerona,0.0,0.001,0.002,0.078,Cataluña,09,
+3.0,2019,u. de las islas baleares,12.209,12.622,False,palma de mallorca,0.0,0.004,0.007,0.413,,,
+4.0,2019,u. autónoma de barcelona,12.3,12.314,True,barcelona,0.0,-0.002,0.004,0.014,Cataluña,09,
+5.0,2019,u. de zaragoza (campus huesca),12.354,12.624,True,huesca,0.0,0.001,-0.002,0.27,Aragón,02,11.5
+6.0,2019,u. de cantabria (santander),12.355,12.734,True,santander,0.0,0.004,0.003,0.379,,,
+7.0,2019,u. del país vasco (lejona),12.361,12.525,True,país vasco,0.0,0.01,0.002,0.164,,,
+8.0,2019,u. jaume i,12.37,12.838,False,castellon de la plana,0.0,-0.008,-0.02,0.468,,,
+9.0,2019,u. de santiago de compostela,12.408,12.575,True,santiago de compostela,0.0,0.004,0.006,0.167,,,
+10.0,2019,u. de salamanca,12.44,12.665,True,salamanca,0.0,-0.0,0.004,0.225,,,
+11.0,2019,u. de barcelona-clínico,12.458,12.546,True,barcelona,0.0,-0.008,-0.001,0.088,Cataluña,09,
+12.0,2019,u. de valladolid,12.476,12.636,True,valladolid,0.0,0.002,0.009,0.16,,,
+13.0,2019,u. de oviedo,12.487,12.79,True,oviedo,0.0,-0.003,0.002,0.303,,,
+14.0,2019,u. pompeu fabra (barcelona),12.494,12.648,True,barcelona,0.0,-0.004,0.008,0.154,Cataluña,09,
+15.0,2019,u. de las palmas,12.498,12.832,True,las palmas,0.0,-0.002,-0.01,0.334,,,
+16.0,2019,u. pública de navarra,12.5,12.707,False,navarra,0.0,0.0,0.0,0.207,,,
+17.0,2019,u. de valencia,12.509,13.018,True,valencia,0.0,-0.003,-0.024,0.509,,,
+18.0,2019,u. de zaragoza (campus zaragoza),12.516,12.742,True,zaragoza,0.0,0.001,0.0,0.226,Aragón,02,11.5
+19.0,2019,u. de extremadura (badajoz),12.547,12.965,True,badajoz,0.0,-0.001,0.013,0.418,,,
+20.0,2019,u. miguel hernández (s. juan de alicante),12.59,12.921,True,alicante,0.0,-0.008,-0.014,0.331,,,
+21.0,2019,u. de murcia,12.644,13.013,True,murcia,0.0,-0.0,0.003,0.369,,,
+22.0,2019,u. de c-la mancha (campus albacete),12.668,12.975,True,albacete,0.0,0.004,-0.0,0.307,,,
+23.0,2019,u. de c-la mancha (campus c.real),12.679,12.87,True,ciudad real,0.0,0.004,0.022,0.191,,,
+24.0,2019,u. de la laguna,12.706,13.027,True,la laguna,0.0,0.013,0.017,0.321,,,
+25.0,2019,u. de cádiz,12.709,12.935,True,cádiz,0.0,0.01,0.021,0.226,,,
+26.0,2019,u. de córdoba,12.791,12.97,True,córdoba,0.0,0.01,0.019,0.179,,,
+27.0,2019,urjc - campus alcorcón,12.794,12.884,True,madrid,0.0,0.007,0.004,0.09,Comunidad de Madrid,13,12.5
+28.0,2019,u. de málaga,12.845,13.0,True,málaga,0.0,0.01,0.018,0.155,,,
+29.0,2019,u. de sevilla,12.89,13.036,True,sevilla,0.0,0.009,0.013,0.146,,,
+30.0,2019,u. de granada,12.904,13.14,True,granada,0.0,0.01,0.018,0.236,,,
+31.0,2019,u. de alcalá,12.918,12.918,True,alcalá,0.0,0.008,0.008,0.0,,,
+32.0,2019,u. complutense de madrid,13.044,13.044,True,madrid,0.0,0.006,0.006,0.0,Comunidad de Madrid,13,12.5
+33.0,2019,u. autónoma de madrid,13.056,13.075,True,madrid,0.0,-0.004,0.009,0.019,Comunidad de Madrid,13,12.5
+0.0,2020,u. autónoma de madrid,13.345,13.426,True,madrid,1.0,0.027,0.022,0.081,Comunidad de Madrid,13,12.5
+1.0,2020,u. complutense de madrid,13.304,13.408,True,madrid,1.0,0.028,0.02,0.104,Comunidad de Madrid,13,12.5
+2.0,2020,u. de granada,13.27,13.5,True,granada,1.0,0.027,0.028,0.23,,,
+3.0,2020,u. de sevilla,13.256,13.429,True,sevilla,1.0,0.03,0.028,0.173,,,
+4.0,2020,u. de málaga,13.186,13.382,True,málaga,1.0,0.029,0.027,0.196,,,
+5.0,2020,u. de murcia,13.152,13.442,True,murcia,1.0,0.033,0.04,0.29,,,
+6.0,2020,u. de alcalá,13.134,13.288,True,alcalá,1.0,0.029,0.017,0.154,,,
+7.0,2020,u. de córdoba,13.122,13.355,True,córdoba,1.0,0.03,0.026,0.233,,,
+8.0,2020,urjc - campus alcorcón,13.1,13.257,True,madrid,1.0,0.029,0.024,0.157,Comunidad de Madrid,13,12.5
+9.0,2020,u. de cádiz,13.09,13.311,True,cádiz,1.0,0.029,0.03,0.221,,,
+10.0,2020,u. de valencia,13.076,13.416,True,valencia,1.0,0.031,0.045,0.34,,,
+11.0,2020,u. miguel hernández (s. juan de alicante),13.038,13.309,True,alicante,1.0,0.03,0.036,0.271,,,
+12.0,2020,u. de c-la mancha (campus c.real),13.014,13.281,True,ciudad real,1.0,0.032,0.026,0.267,,,
+13.0,2020,u. de c-la mancha (campus albacete),12.991,13.28,True,albacete,1.0,0.024,0.025,0.289,,,
+14.0,2020,u. jaume i,12.962,13.256,False,castellon de la plana,1.0,0.033,0.048,0.294,,,
+15.0,2020,u. de las palmas,12.951,13.078,True,las palmas,1.0,0.019,0.036,0.127,,,
+16.0,2020,u. pública de navarra,12.949,13.318,False,navarra,1.0,0.048,0.036,0.369,,,
+17.0,2020,u. de extremadura (badajoz),12.902,13.43,True,badajoz,1.0,0.036,0.028,0.528,,,
+18.0,2020,u. de oviedo,12.898,13.42,True,oviedo,1.0,0.049,0.033,0.522,,,
+19.0,2020,u. de la laguna,12.85,13.196,True,la laguna,1.0,0.013,0.011,0.346,,,
+20.0,2020,u. del país vasco (lejona),12.823,12.871,True,país vasco,1.0,0.028,0.037,0.048,,,
+21.0,2020,u. de santiago de compostela,12.748,13.031,True,santiago de compostela,1.0,0.036,0.027,0.283,,,
+22.0,2020,u. de zaragoza (campus zaragoza),12.735,13.15,True,zaragoza,1.0,0.032,0.017,0.415,Aragón,02,11.5
+23.0,2020,u. de cantabria (santander),12.727,13.242,True,santander,1.0,0.04,0.03,0.515,,,
+24.0,2020,u. de zaragoza (campus huesca),12.719,13.062,True,huesca,1.0,0.035,0.03,0.343,Aragón,02,11.5
+25.0,2020,u. de salamanca,12.709,13.314,True,salamanca,1.0,0.051,0.022,0.605,,,
+26.0,2020,u. de valladolid,12.708,13.17,True,valladolid,1.0,0.042,0.019,0.462,,,
+27.0,2020,u. autónoma de barcelona,12.664,12.718,True,barcelona,1.0,0.033,0.03,0.054,Cataluña,09,
+28.0,2020,u. de barcelona-bellvitge,12.66,12.99,False,barcelona,1.0,0.0,0.0,0.33,Cataluña,09,
+29.0,2020,u. de barcelona-clínico,12.659,13.135,True,barcelona,1.0,0.047,0.016,0.476,Cataluña,09,
+30.0,2020,u. de las islas baleares,12.636,13.106,False,palma de mallorca,1.0,0.038,0.035,0.47,,,
+31.0,2020,u. pompeu fabra (barcelona),12.598,13.042,True,barcelona,1.0,0.031,0.008,0.444,Cataluña,09,
+32.0,2020,u. de gerona,12.549,12.672,True,gerona,1.0,0.032,0.029,0.123,Cataluña,09,
+33.0,2020,u. rovira i virgili (reus),12.543,12.791,True,reus,1.0,0.037,0.03,0.248,Cataluña,09,
+34.0,2020,u. de lérida,12.525,12.68,True,lérida,1.0,0.031,0.028,0.155,Cataluña,09,
+0.0,2021,u. complutense de madrid,13.426,13.5,True,madrid,1.0,0.007,0.009,0.074,Comunidad de Madrid,13,12.5
+1.0,2021,u. de sevilla,13.345,13.53,True,sevilla,1.0,0.008,0.007,0.185,,,
+2.0,2021,u. de murcia,13.345,13.558,True,murcia,1.0,0.009,0.015,0.213,,,
+3.0,2021,u. de granada,13.319,13.58,True,granada,1.0,0.006,0.004,0.261,,,
+4.0,2021,u. autónoma de madrid,13.309,13.463,True,madrid,1.0,0.003,-0.003,0.154,Comunidad de Madrid,13,12.5
+5.0,2021,u. de málaga,13.275,13.476,True,málaga,1.0,0.007,0.007,0.201,,,
+6.0,2021,u. de córdoba,13.25,13.45,True,córdoba,1.0,0.007,0.01,0.2,,,
+7.0,2021,u. de cádiz,13.232,13.43,True,cádiz,1.0,0.009,0.011,0.198,,,
+8.0,2021,u. miguel hernández (s. juan de alicante),13.15,13.419,True,alicante,1.0,0.008,0.009,0.269,,,
+9.0,2021,u. de c-la mancha (campus c.real),13.146,13.421,True,ciudad real,1.0,0.011,0.01,0.275,,,
+10.0,2021,u. de alcalá,13.133,13.357,True,alcalá,1.0,0.005,-0.0,0.224,,,
+11.0,2021,u. de valladolid,13.121,13.332,True,valladolid,1.0,0.012,0.032,0.211,,,
+12.0,2021,urjc - campus alcorcón,13.119,13.35,True,madrid,1.0,0.007,0.001,0.231,Comunidad de Madrid,13,12.5
+13.0,2021,u. de c-la mancha (campus albacete),13.107,13.406,True,albacete,1.0,0.009,0.009,0.299,,,
+14.0,2021,u. de extremadura (badajoz),13.1,13.45,True,badajoz,1.0,0.001,0.015,0.35,,,
+15.0,2021,u. pública de navarra,13.086,13.247,False,navarra,1.0,-0.005,0.011,0.161,,,
+16.0,2021,u. de valencia,13.074,13.475,True,valencia,1.0,0.004,-0.0,0.401,,,
+17.0,2021,u. jaume i,13.042,13.376,False,castellon de la plana,1.0,0.009,0.006,0.334,,,
+18.0,2021,u. de zaragoza (campus zaragoza),13.031,13.299,True,zaragoza,1.0,0.011,0.023,0.268,Aragón,02,11.5
+19.0,2021,u. de barcelona-clínico,13.022,13.146,True,barcelona,1.0,0.001,0.029,0.124,Cataluña,09,
+20.0,2021,u. de la laguna,12.983,13.304,True,la laguna,1.0,0.008,0.01,0.321,,,
+21.0,2021,u. de las palmas,12.962,13.246,True,las palmas,1.0,0.013,0.001,0.284,,,
+22.0,2021,u. de salamanca,12.952,13.303,True,salamanca,1.0,-0.001,0.019,0.351,,,
+23.0,2021,u. de zaragoza (campus huesca),12.937,13.215,True,huesca,1.0,0.012,0.017,0.278,Aragón,02,11.5
+24.0,2021,u. de santiago de compostela,12.925,12.925,True,santiago de compostela,1.0,-0.008,0.014,0.0,,,
+25.0,2021,u. de oviedo,12.916,13.358,True,oviedo,1.0,-0.005,0.001,0.442,,,
+26.0,2021,u. de cantabria (santander),12.902,13.278,True,santander,1.0,0.003,0.014,0.376,,,
+27.0,2021,u. de barcelona-bellvitge,12.878,12.988,False,barcelona,1.0,-0.0,0.017,0.11,Cataluña,09,
+28.0,2021,u. del país vasco (lejona),12.827,13.065,True,país vasco,1.0,0.015,0.0,0.238,,,
+29.0,2021,u. de las islas baleares,12.76,13.225,False,palma de mallorca,1.0,0.009,0.01,0.465,,,
+30.0,2021,u. pompeu fabra (barcelona),12.758,13.098,True,barcelona,1.0,0.004,0.013,0.34,Cataluña,09,
+31.0,2021,u. autónoma de barcelona,12.751,12.828,True,barcelona,1.0,0.009,0.007,0.077,Cataluña,09,
+32.0,2021,u. de gerona,12.717,12.774,True,gerona,1.0,0.008,0.013,0.057,Cataluña,09,
+33.0,2021,u. de lérida,12.711,12.799,True,lérida,1.0,0.009,0.015,0.088,Cataluña,09,
+34.0,2021,u. rovira i virgili (reus),12.708,12.852,True,reus,1.0,0.005,0.013,0.144,Cataluña,09,
+,2022,u. complutense de madrid,13.467,13.541,,,,,,0.074,,,
+,2022,u. de sevilla,13.382,13.567,,,,,,0.185,,,
+,2022,u. de murcia,13.336,13.549,,,,,,0.213,,,
+,2022,u. de granada,13.322,13.583,,,,,,0.261,,,
+,2022,u. autónoma de madrid,13.395,13.549,,,,,,0.154,,,
+,2022,u. de málaga,13.294,13.495,,,,,,0.201,,,
+,2022,u. de córdoba,13.26,13.46,,,,,,0.2,,,
+,2022,u. de cádiz,13.261,13.459,,,,,,0.198,,,
+,2022,u. miguel hernández (s. juan de alicante),13.161,13.43,,,,,,0.269,,,
+,2022,u. de c-la mancha (campus c.real),13.178,13.453,,,,,,0.275,,,
+,2022,u. de alcalá,13.21,13.434,,,,,,0.224,,,
+,2022,u. de valladolid,13.11,13.321,,,,,,0.211,,,
+,2022,urjc - campus alcorcón,13.187,13.418,,,,,,0.231,,,
+,2022,u. de c-la mancha (campus albacete),13.149,13.448,,,,,,0.299,,,
+,2022,u. de extremadura (badajoz),13.119,13.469,,,,,,0.35,,,
+,2022,u. pública de navarra,13.019,13.18,,,,,,0.161,,,
+,2022,u. de valencia,13.126,13.527,,,,,,0.401,,,
+,2022,u. jaume i,13.06,13.394,,,,,,0.334,,,
+,2022,u. de zaragoza (campus zaragoza),13.032,13.3,,,,,,0.268,,,
+,2022,u. de barcelona-clínico,13.021,13.145,,,,,,0.124,,,
+,2022,u. de la laguna,13.043,13.364,,,,,,0.321,,,
+,2022,u. de las palmas,12.967,13.251,,,,,,0.284,,,
+,2022,u. de salamanca,12.943,13.294,,,,,,0.351,,,
+,2022,u. de zaragoza (campus huesca),12.929,13.207,,,,,,0.278,,,
+,2022,u. de santiago de compostela,12.987,12.987,,,,,,0.0,,,
+,2022,u. de oviedo,12.919,13.361,,,,,,0.442,,,
+,2022,u. de cantabria (santander),12.9,13.276,,,,,,0.376,,,
+,2022,u. de barcelona-bellvitge,12.876,12.986,,,,,,0.11,,,
+,2022,u. del país vasco (lejona),12.814,13.052,,,,,,0.238,,,
+,2022,u. de las islas baleares,12.713,13.178,,,,,,0.465,,,
+,2022,u. pompeu fabra (barcelona),12.787,13.127,,,,,,0.34,,,
+,2022,u. autónoma de barcelona,12.759,12.836,,,,,,0.077,,,
+,2022,u. de gerona,12.731,12.788,,,,,,0.057,,,
+,2022,u. de lérida,12.72,12.808,,,,,,0.088,,,
+,2022,u. rovira i virgili (reus),12.731,12.875,,,,,,0.144,,,
