@@ -1,5 +1,6 @@
 # in terminal: streamlit run /Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/streamlit/myapp.py
 from importlib.machinery import DEBUG_BYTECODE_SUFFIXES
+from tkinter import Y
 from matplotlib import scale
 import streamlit as st
 import pandas as pd
@@ -79,7 +80,7 @@ with row2_1:
     chart = alt.Chart(df_selected_year).mark_bar().encode(
         y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
         x=alt.X('1_list:Q', axis=alt.Axis(title='1_list'), scale=alt.Scale(domain=(min(df_selected_year['1_list']) - 0.01, max(df_selected_year['1_list']) + 0.01))),
-        #color=alt.Color('convocatory:N'),
+        #color=alt.Color('CCAA:O', scale=alt.Scale(scheme='dark2')),
         tooltip=('university','1_list')
       ).properties(title= str(selected_year) + ' 1_list scores', width=200, height=600)
     st.altair_chart(chart, use_container_width=True)
@@ -87,7 +88,7 @@ with row2_1:
     chart = alt.Chart(df_selected_year).mark_bar().encode(
         y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
         x=alt.X('final_grade:Q', scale=alt.Scale(domain=(min(df_selected_year['final_grade']) - 0.01, max(df_selected_year['final_grade']) + 0.01))),
-        #color=alt.Color('convocatory:N'),
+        #color=alt.Color('CCAA:O', scale=alt.Scale(scheme='dark2')),
         tooltip=('university','final_grade')
       ).properties(title= str(selected_year) + ' final_grade scores', width=200, height=600)
     st.altair_chart(chart, use_container_width=True)
@@ -257,7 +258,8 @@ with row5_1:
   chart = alt.Chart(df_selected_year).mark_bar().encode(
       y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
       x=alt.X('diff_1_list_final_grade:Q', axis=alt.Axis(title='Difference 1_list and final_grade'), scale=alt.Scale(domain=(min(df_selected_year['diff_1_list_final_grade']), max(df_selected_year['diff_1_list_final_grade'])))),
-      tooltip=('university','diff_1_list_final_grade')
+      tooltip=('university','diff_1_list_final_grade'),
+      color=alt.Color('CCAA:O', scale=alt.Scale(scheme='dark2'))
     ).properties(title = 'Difference between 1_list scores and final_grade for year ' + str(selected_year), width=200, height=600)
   st.altair_chart(chart, use_container_width=True)
 
@@ -283,7 +285,20 @@ row6_1, row6_2 = st.columns((2, 2))
 
 
 with row6_1:
+  chart = alt.Chart(dfs_unified).mark_point().encode(
+      x=alt.X('growth_1_list:Q', scale = alt.Scale(domain=(min(dfs_unified['growth_1_list']) - 0.01, max(dfs_unified['growth_1_list'] + 0.01)))),
+      y=alt.Y('growth_final_grade:Q', scale = alt.Scale(domain=(min(dfs_unified['growth_final_grade']) - 0.01, max(dfs_unified['growth_final_grade'] + 0.01)))), 
+      color=alt.Color('university:O', scale=alt.Scale(scheme='dark2'))
+  ) 
+  st.altair_chart(chart, use_container_width=True)
 
 
 
-  
+with row6_2:
+  chart = alt.Chart(df_selected_year).mark_point().encode(
+      x=alt.X('diff_1_list_final_grade:Q'),
+      y=alt.Y('university:O'),
+      color=alt.Color('CCAA:O', scale=alt.Scale(scheme='dark2'))
+  )
+      
+  st.altair_chart(chart, use_container_width=True)
