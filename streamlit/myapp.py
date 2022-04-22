@@ -302,3 +302,9 @@ with row6_2:
   )
       
   st.altair_chart(chart, use_container_width=True)
+
+
+
+row7_1, row7_2 = st.columns((2, 2))
+
+
