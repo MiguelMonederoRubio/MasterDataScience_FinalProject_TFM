@@ -1,7 +1,5 @@
 # in terminal: streamlit run /Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/streamlit/myapp.py
 from importlib.machinery import DEBUG_BYTECODE_SUFFIXES
-from tkinter import Y
-from matplotlib import scale
 import streamlit as st
 import pandas as pd
 import base64
@@ -12,6 +10,13 @@ import altair as alt
 import folium as folium  # pip install folium
 from streamlit_folium import folium_static # pip install streamlit-folium
 from folium.features import GeoJson, GeoJsonTooltip, GeoJsonPopup
+import geopandas as gpd
+import os 
+import folium
+from folium import plugins
+import rioxarray as rxr
+import earthpy as et
+import earthpy.spatial as es
 
 # wide mode
 st.set_page_config(layout="wide")
@@ -42,6 +47,7 @@ with row2_1:
 
 
 dfs_unified = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/exported_data.csv')
+
 
 
 # Sidebar
@@ -95,72 +101,118 @@ with row2_1:
 
 
 
+
+
+# map
+def create_marker(map, latitude, longitude, popup_info, tooltip_info, color_marked):
+   folium.Marker(
+      location=[latitude, longitude], # coordinates for the marker (Earth Lab at CU Boulder)
+      popup=popup_info, # pop-up label for the marker,
+      tooltip=tooltip_info , # tooltip label for the marker
+      icon=folium.Icon(color=color_marked)).add_to(map)
+
+
+  # #prueba = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/prueba.csv')
+  # f = folium.Figure(width=700, height=550)
+  # json1 = f"/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/georef-spain-comunidad-autonoma.geojson"
+  # m = folium.Map(location=[37,-8], zoom_start=5, width=700, height=550, control_scale=True, tiles='CartoDB Positron',
+  #               name='Light Map', attr='My Data attribution').add_to(f)
+
+  # #Add layers for Popup and Tooltips
+
+  # popup = GeoJsonPopup(
+  #     fields=['acom_name'],
+  #     aliases=['CCAA'], 
+  #     localize=True,
+  #     labels=True,
+  #     style="background-color: yellow;",
+  # )
+
+  # tooltip = GeoJsonTooltip(
+  #     fields=['acom_name'],
+  #     aliases=['CCAA'],
+  #     localize=True,
+  #     sticky=False,
+  #     labels=True,
+  #     style="""
+  #         background-color: #F0EFEF;
+  #         border: 1px solid black;
+  #         border-radius: 3px;
+  #         box-shadow: 3px;
+  #     """,
+  #     max_width=700,
+  # )
+  
+
+
+  # # Choropleth layer
+  # g = folium.Choropleth(
+  #     geo_data = json1,
+  #     name = 'choropleth',
+  #     data = df_selected_year,
+  #     columns=['acom_code', 'avg_final_grade_CCAA'],
+  #     key_on='feature.properties.acom_code',
+  #     fill_color='YlOrRd',
+  #     fill_opacity=0.5,
+  #     line_opacity=0.2,
+  #     legend_name='avg_final_grade_CCAA',
+  #     highlight=True
+  # ).add_to(m)
+  
+
+  # folium.GeoJson(
+  #     json1,
+  #     style_function=lambda feature: {
+  #         'fillColor': '#ffff00',
+  #         'color': 'black',
+  #         'weight': 0.2,
+  #         'dashArray': '5, 5'
+  #     },
+  #     tooltip=tooltip,
+  #     popup=popup).add_to(g)
+
+  
+  # #folium.LayerControl().add_to(m)
+  # folium_static(f, width=700, height=550)
+
 with row2_2:
-  prueba = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/prueba.csv')
-  json1 = f"/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/georef-spain-comunidad-autonoma.geojson"
-  m = folium.Map(location=[37,-8], zoom_start=5, width=700, height=550, control_scale=True, tiles='CartoDB Positron',
-                name='Light Map', attr='My Data attribution')
 
-  #Add layers for Popup and Tooltips
-
-  popup = GeoJsonPopup(
-      fields=['acom_name'],
-      aliases=['CCAA'], 
-      localize=True,
-      labels=True,
-      style="background-color: yellow;",
-  )
-
-  tooltip = GeoJsonTooltip(
-      fields=['acom_name'],
-      aliases=['CCAA'],
-      localize=True,
-      sticky=False,
-      labels=True,
-      style="""
-          background-color: #F0EFEF;
-          border: 1px solid black;
-          border-radius: 3px;
-          box-shadow: 3px;
-      """,
-      max_width=700,
-  )
-
+  f = folium.Figure(width=700, height=550)
+  m = folium.Map(location=[40.4167047, -3.7035825], zoom_start=6, width=700, height=550, control_scale=True, tiles='CartoDB Positron',
+                  name='Light Map', attr='My Data attribution').add_to(f)
 
   
-  # Choropleth layer
-  g = folium.Choropleth(
-      geo_data = json1,
-      name = 'choropleth',
-      data = dfs_unified,
-      columns=['acom_code', 'avg_final_grade_CCAA'],
-      key_on='feature.properties.acom_code',
-      fill_color='YlOrRd',
-      fill_opacity=0.5,
-      line_opacity=0.2,
-      legend_name='avg_final_grade_CCAA',
-      highlight=True
-  ).add_to(m)
+# sortby y hacer un head o tail, y en funcion de eso, poner un color u otro y luego crear una leyenda con los colores
   
+# ojo en 2010 hay menos unis
 
+  list_unis_selected_year = list(df_selected_year['university'].unique())
+  # iterate through list
+  #list_unis_selected_year = ['u. autónoma de barcelona']
+  
+  for uni in list_unis_selected_year:
+    latitude_uni = df_selected_year.loc[df_selected_year['university'] == uni, 'latitude'].mean()
+    longitude_uni = df_selected_year.loc[df_selected_year['university'] == uni, 'longitude'].mean()
+    
+    if convocatory_selected == '1_list':
+      score = df_selected_year.loc[df_selected_year['university'] == uni, '1_list'].mean()
+    else:
+      score = df_selected_year.loc[df_selected_year['university'] == uni, 'final_grade'].mean()
+     
+    if score < 12.5:
+      color_marked = 'green'
+    elif 12.5 <= score < 13.5:
+      color_marked = 'lightred'
+    else:
+      color_marked = 'red'
 
-  folium.GeoJson(
-      json1,
-      style_function=lambda feature: {
-          'fillColor': '#ffff00',
-          'color': 'black',
-          'weight': 0.2,
-          'dashArray': '5, 5'
-      },
-      tooltip=tooltip,
-      popup=popup).add_to(g)
-      
-
-  folium.LayerControl().add_to(m)
-  folium_static(m, width=700, height=550)
-
-
-
+    
+    #print(latitude_uni, longitude_uni, score, uni, color_marked)
+    create_marker(m, latitude_uni, longitude_uni, score, uni, color_marked)
+    
+  #create_marker(m, 41.502593, 2.080056, 'u. autónoma de barcelona', 13.0, 'darkred')
+  # Display the map
+  folium_static(f, width=700, height=550)
 
 # LAYING OUT THE TOP SECTION OF THE APP
 row3_1, row3_2 = st.columns((2, 2))
@@ -307,4 +359,35 @@ with row6_2:
 
 row7_1, row7_2 = st.columns((2, 2))
 
+
+#with row7_1:
+
+  # natalidad = "/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/natalidad.geojson"
+  # map_data = gpd.read_file(natalidad)
+  
+  # # Control del tamaño de la figura del mapa
+  # fig, ax = plt.subplots(figsize=(8, 8))
+  
+  # # Control del título y los ejes
+  # ax.set_title('Natalidad por Provincias en España, 2018', 
+  #             pad = 10, 
+  #             fontdict={'fontsize':10, 'color': '#4873ab'})
+  # ax.set_xlabel('Longitud')
+  # ax.set_ylabel('Latitud')
+  
+  # # Añadir la leyenda separada del mapa
+  # from mpl_toolkits.axes_grid1 import make_axes_locatable
+  # divider = make_axes_locatable(ax)
+  # cax = divider.append_axes("right", size="5%", pad=0.2)
+  
+  # # Generar y cargar el mapa
+  # map_data.plot(column='NAT2018', cmap='plasma', ax=ax,
+  #               legend=True, cax=cax, zorder=5)
+  # st.pyplot(fig)
+
+
+
+  #!pip install rioxarray
+  #!pip install earthpy
+  
 
