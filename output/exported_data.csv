@@ -18,10 +18,10 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 16.0,2010,u. del país vasco (lejona),11.503,11.922,True,bilbao,0.0,,,0.419,País Vasco,43.3359821,-2.9768285
 17.0,2010,u. de c-la mancha (campus albacete),11.53,12.246,True,albacete,0.0,,,0.716,Castilla-La Mancha,38.4527362,-2.05363374
 18.0,2010,u. de sevilla,11.559,12.272,True,sevilla,0.0,,,0.713,Andalucía,37.4128557,-5.9845606
-19.0,2010,u. miguel hernández (s. juan de alicante),11.584,12.216,True,alicante,0.0,,,0.632,Andalucía,38.39896277,-0.43477806
+19.0,2010,u. miguel hernández (s. juan de alicante),11.584,12.216,True,alicante,0.0,,,0.632,C. Valenciana,38.39896277,-0.43477806
 20.0,2010,u. de alcalá,11.631,11.862,True,alcalá,0.0,,,0.231,C. Madrid,40.4818396,-3.3644973
 21.0,2010,u. de málaga,11.645,12.225,True,málaga,0.0,,,0.58,Andalucía,36.7200431,-4.41617939
-22.0,2010,u. de murcia,11.666,12.388,True,murcia,0.0,,,0.722,Andalucía,37.99109245,-1.13010405
+22.0,2010,u. de murcia,11.666,12.388,True,murcia,0.0,,,0.722,Murcia,37.99109245,-1.13010405
 23.0,2010,u. de la laguna,11.68,12.2,True,la laguna,0.0,,,0.52,Canarias,28.4852475,-16.3126059
 24.0,2010,urjc - campus alcorcón,11.7,11.867,True,madrid,0.0,,,0.167,C. Madrid,40.3506324,-3.8437926
 25.0,2010,u. de valencia,11.732,12.247,True,valencia,0.0,,,0.515,C. Valenciana,39.4786642,-0.3627246
@@ -49,9 +49,9 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 16.0,2011,u. de c-la mancha (campus albacete),11.964,12.36,True,albacete,0.0,0.009,0.038,0.396,Castilla-La Mancha,38.4527362,-2.05363374
 17.0,2011,u. de la laguna,11.977,12.42,True,la laguna,0.0,0.018,0.025,0.443,Canarias,28.4852475,-16.3126059
 18.0,2011,u. de valencia,11.986,12.41,True,valencia,0.0,0.013,0.022,0.424,C. Valenciana,39.4786642,-0.3627246
-19.0,2011,u. de murcia,11.987,12.602,True,murcia,0.0,0.017,0.028,0.615,Andalucía,37.99109245,-1.13010405
+19.0,2011,u. de murcia,11.987,12.602,True,murcia,0.0,0.017,0.028,0.615,Murcia,37.99109245,-1.13010405
 20.0,2011,u. de sevilla,12.022,12.451,True,sevilla,0.0,0.015,0.04,0.429,Andalucía,37.4128557,-5.9845606
-21.0,2011,u. miguel hernández (s. juan de alicante),12.022,12.52,True,alicante,0.0,0.025,0.038,0.498,Andalucía,38.39896277,-0.43477806
+21.0,2011,u. miguel hernández (s. juan de alicante),12.022,12.52,True,alicante,0.0,0.025,0.038,0.498,C. Valenciana,38.39896277,-0.43477806
 22.0,2011,u. de alcalá,12.023,12.125,True,alcalá,0.0,0.022,0.034,0.102,C. Madrid,40.4818396,-3.3644973
 23.0,2011,u. de c-la mancha (campus c.real),12.04,12.4,True,ciudad real,0.0,0.005,0.049,0.36,Castilla-La Mancha,38.9918372,-3.9268263
 24.0,2011,urjc - campus alcorcón,12.064,12.143,True,madrid,0.0,0.023,0.031,0.079,C. Madrid,40.3506324,-3.8437926
@@ -82,7 +82,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 17.0,2012,u. de c-la mancha (campus c.real),12.068,12.458,True,ciudad real,0.0,0.005,0.002,0.39,Castilla-La Mancha,38.9918372,-3.9268263
 18.0,2012,urjc - campus alcorcón,12.107,12.189,True,madrid,0.0,0.004,0.004,0.082,C. Madrid,40.3506324,-3.8437926
 19.0,2012,u. de c-la mancha (campus albacete),12.115,12.456,True,albacete,0.0,0.008,0.013,0.341,Castilla-La Mancha,38.4527362,-2.05363374
-20.0,2012,u. miguel hernández (s. juan de alicante),12.131,12.526,True,alicante,0.0,0.0,0.009,0.395,Andalucía,38.39896277,-0.43477806
+20.0,2012,u. miguel hernández (s. juan de alicante),12.131,12.526,True,alicante,0.0,0.0,0.009,0.395,C. Valenciana,38.39896277,-0.43477806
 21.0,2012,u. de sevilla,12.136,12.503,True,sevilla,0.0,0.004,0.009,0.367,Andalucía,37.4128557,-5.9845606
 22.0,2012,u. de alcalá,12.178,12.229,True,alcalá,0.0,0.009,0.013,0.051,C. Madrid,40.4818396,-3.3644973
 23.0,2012,u. de las palmas,12.178,12.429,True,las palmas,0.0,0.001,-0.001,0.251,Canarias,28.09055808,-15.41890014
@@ -90,7 +90,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 25.0,2012,u. de córdoba,12.196,12.555,True,córdoba,0.0,-0.0,0.002,0.359,Andalucía,37.8560421,-4.8134452
 26.0,2012,u. de málaga,12.197,12.554,True,málaga,0.0,0.0,-0.001,0.357,Andalucía,36.7200431,-4.41617939
 27.0,2012,u. de oviedo,12.226,12.692,True,oviedo,0.0,0.0,-0.005,0.466,Asturias,43.3533657,-5.8687712
-28.0,2012,u. de murcia,12.29,12.808,True,murcia,0.0,0.016,0.025,0.518,Andalucía,37.99109245,-1.13010405
+28.0,2012,u. de murcia,12.29,12.808,True,murcia,0.0,0.016,0.025,0.518,Murcia,37.99109245,-1.13010405
 29.0,2012,u. autónoma de madrid,12.3,12.424,True,madrid,0.0,0.009,0.008,0.124,C. Madrid,40.4832261,-3.6972262
 30.0,2012,u. de granada,12.449,12.822,True,granada,0.0,0.003,0.007,0.373,Andalucía,37.1474408,-3.6042349
 31.0,2012,u. complutense de madrid,12.499,12.499,True,madrid,0.0,0.002,0.012,0.0,C. Madrid,40.4437398,-3.72614639
@@ -112,7 +112,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 15.0,2013,u. de barcelona-clínico,12.089,12.408,True,barcelona,0.0,0.006,0.024,0.319,Cataluña,41.39017434,2.15212588
 16.0,2013,u. de c-la mancha (campus c.real),12.1,12.505,True,ciudad real,0.0,0.004,0.003,0.405,Castilla-La Mancha,38.9918372,-3.9268263
 17.0,2013,u. de alcalá,12.1,12.396,True,alcalá,0.0,0.014,-0.006,0.296,C. Madrid,40.4818396,-3.3644973
-18.0,2013,u. miguel hernández (s. juan de alicante),12.103,12.43,True,alicante,0.0,-0.008,-0.002,0.327,Andalucía,38.39896277,-0.43477806
+18.0,2013,u. miguel hernández (s. juan de alicante),12.103,12.43,True,alicante,0.0,-0.008,-0.002,0.327,C. Valenciana,38.39896277,-0.43477806
 19.0,2013,u. de la laguna,12.123,12.48,True,la laguna,0.0,-0.007,0.006,0.357,Canarias,28.4852475,-16.3126059
 20.0,2013,urjc - campus alcorcón,12.136,12.343,True,madrid,0.0,0.013,0.002,0.207,C. Madrid,40.3506324,-3.8437926
 21.0,2013,u. de valencia,12.146,12.523,True,valencia,0.0,-0.002,-0.003,0.377,C. Valenciana,39.4786642,-0.3627246
@@ -121,7 +121,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 24.0,2013,u. de sevilla,12.258,12.537,True,sevilla,0.0,0.003,0.01,0.279,Andalucía,37.4128557,-5.9845606
 25.0,2013,u. de las palmas,12.26,12.592,True,las palmas,0.0,0.013,0.007,0.332,Canarias,28.09055808,-15.41890014
 26.0,2013,u. de málaga,12.307,12.627,True,málaga,0.0,0.006,0.009,0.32,Andalucía,36.7200431,-4.41617939
-27.0,2013,u. de murcia,12.346,12.743,True,murcia,0.0,-0.005,0.005,0.397,Andalucía,37.99109245,-1.13010405
+27.0,2013,u. de murcia,12.346,12.743,True,murcia,0.0,-0.005,0.005,0.397,Murcia,37.99109245,-1.13010405
 28.0,2013,u. autónoma de madrid,12.429,12.558,True,madrid,0.0,0.011,0.01,0.129,C. Madrid,40.4832261,-3.6972262
 29.0,2013,u. complutense de madrid,12.435,12.571,True,madrid,0.0,0.006,-0.005,0.136,C. Madrid,40.4437398,-3.72614639
 30.0,2013,u. de oviedo,12.458,12.694,True,oviedo,0.0,0.0,0.019,0.236,Asturias,43.3533657,-5.8687712
@@ -142,12 +142,12 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 13.0,2014,u. de c-la mancha (campus albacete),12.19,12.56,True,albacete,0.0,0.0,0.002,0.37,Castilla-La Mancha,38.4527362,-2.05363374
 14.0,2014,urjc - campus alcorcón,12.285,12.382,True,madrid,0.0,0.003,0.012,0.097,C. Madrid,40.3506324,-3.8437926
 15.0,2014,u. pompeu fabra (barcelona),12.288,12.356,True,barcelona,0.0,0.001,0.033,0.068,Cataluña,41.37921475,2.17941527
-16.0,2014,u. miguel hernández (s. juan de alicante),12.304,12.514,True,alicante,0.0,0.007,0.017,0.21,Andalucía,38.39896277,-0.43477806
+16.0,2014,u. miguel hernández (s. juan de alicante),12.304,12.514,True,alicante,0.0,0.007,0.017,0.21,C. Valenciana,38.39896277,-0.43477806
 17.0,2014,u. de extremadura (badajoz),12.306,12.682,True,badajoz,0.0,0.018,0.023,0.376,Extremadura,38.8824069,-7.0194457
 18.0,2014,u. de cádiz,12.35,12.603,True,cádiz,0.0,0.012,0.024,0.253,Andalucía,36.5340199,-6.3018987
 19.0,2014,u. de valencia,12.356,12.656,True,valencia,0.0,0.011,0.017,0.3,C. Valenciana,39.4786642,-0.3627246
 20.0,2014,u. de alcalá,12.376,12.422,True,alcalá,0.0,0.002,0.023,0.046,C. Madrid,40.4818396,-3.3644973
-21.0,2014,u. de murcia,12.389,12.854,True,murcia,0.0,0.009,0.003,0.465,Andalucía,37.99109245,-1.13010405
+21.0,2014,u. de murcia,12.389,12.854,True,murcia,0.0,0.009,0.003,0.465,Murcia,37.99109245,-1.13010405
 22.0,2014,u. de barcelona-clínico,12.394,12.46,True,barcelona,0.0,0.004,0.025,0.066,Cataluña,41.39017434,2.15212588
 23.0,2014,u. de oviedo,12.408,12.692,True,oviedo,0.0,-0.0,-0.004,0.284,Asturias,43.3533657,-5.8687712
 24.0,2014,u. de sevilla,12.44,12.653,True,sevilla,0.0,0.009,0.015,0.213,Andalucía,37.4128557,-5.9845606
@@ -174,7 +174,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 13.0,2015,u. de zaragoza (campus zaragoza),12.404,12.547,True,zaragoza,0.0,0.012,0.029,0.143,Aragón,41.6421312,-0.90302271
 14.0,2015,u. de c-la mancha (campus albacete),12.424,12.694,True,albacete,0.0,0.011,0.019,0.27,Castilla-La Mancha,38.4527362,-2.05363374
 15.0,2015,u. de c-la mancha (campus c.real),12.433,12.678,True,ciudad real,0.0,0.012,0.023,0.245,Castilla-La Mancha,38.9918372,-3.9268263
-16.0,2015,u. miguel hernández (s. juan de alicante),12.438,12.644,True,alicante,0.0,0.01,0.011,0.206,Andalucía,38.39896277,-0.43477806
+16.0,2015,u. miguel hernández (s. juan de alicante),12.438,12.644,True,alicante,0.0,0.01,0.011,0.206,C. Valenciana,38.39896277,-0.43477806
 17.0,2015,urjc - campus alcorcón,12.455,12.536,True,madrid,0.0,0.012,0.014,0.081,C. Madrid,40.3506324,-3.8437926
 18.0,2015,u. de alcalá,12.472,12.543,True,alcalá,0.0,0.01,0.008,0.071,C. Madrid,40.4818396,-3.3644973
 19.0,2015,u. de cádiz,12.482,12.719,True,cádiz,0.0,0.009,0.011,0.237,Andalucía,36.5340199,-6.3018987
@@ -186,7 +186,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 25.0,2015,u. de barcelona-clínico,12.642,12.698,True,barcelona,0.0,0.019,0.02,0.056,Cataluña,41.39017434,2.15212588
 26.0,2015,u. de sevilla,12.645,12.798,True,sevilla,0.0,0.011,0.016,0.153,Andalucía,37.4128557,-5.9845606
 27.0,2015,u. autónoma de madrid,12.651,12.819,True,madrid,0.0,0.013,0.007,0.168,C. Madrid,40.4832261,-3.6972262
-28.0,2015,u. de murcia,12.661,12.95,True,murcia,0.0,0.007,0.022,0.289,Andalucía,37.99109245,-1.13010405
+28.0,2015,u. de murcia,12.661,12.95,True,murcia,0.0,0.007,0.022,0.289,Murcia,37.99109245,-1.13010405
 29.0,2015,u. de granada,12.669,12.947,True,granada,0.0,0.001,-0.002,0.278,Andalucía,37.1474408,-3.6042349
 30.0,2015,u. complutense de madrid,12.697,12.697,True,madrid,0.0,0.006,0.007,0.0,C. Madrid,40.4437398,-3.72614639
 31.0,2015,u. de las palmas,12.791,12.839,True,las palmas,0.0,0.005,0.023,0.048,Canarias,28.09055808,-15.41890014
@@ -207,7 +207,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 14.0,2016,u. del país vasco (lejona),12.392,12.444,True,bilbao,0.0,0.014,0.014,0.052,País Vasco,43.3359821,-2.9768285
 15.0,2016,u. de oviedo,12.404,12.762,True,oviedo,0.0,0.011,0.005,0.358,Asturias,43.3533657,-5.8687712
 16.0,2016,urjc - campus alcorcón,12.451,12.62,True,madrid,0.0,0.007,-0.0,0.169,C. Madrid,40.3506324,-3.8437926
-17.0,2016,u. miguel hernández (s. juan de alicante),12.501,12.848,True,alicante,0.0,0.016,0.005,0.347,Andalucía,38.39896277,-0.43477806
+17.0,2016,u. miguel hernández (s. juan de alicante),12.501,12.848,True,alicante,0.0,0.016,0.005,0.347,C. Valenciana,38.39896277,-0.43477806
 18.0,2016,u. de c-la mancha (campus c.real),12.517,12.749,True,ciudad real,0.0,0.006,0.007,0.232,Castilla-La Mancha,38.9918372,-3.9268263
 19.0,2016,u. de c-la mancha (campus albacete),12.525,12.768,True,albacete,0.0,0.006,0.008,0.243,Castilla-La Mancha,38.4527362,-2.05363374
 20.0,2016,u. de extremadura (badajoz),12.532,13.082,True,badajoz,0.0,0.019,0.014,0.55,Extremadura,38.8824069,-7.0194457
@@ -220,7 +220,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 27.0,2016,u. de córdoba,12.684,12.874,True,córdoba,0.0,0.011,0.009,0.19,Andalucía,37.8560421,-4.8134452
 28.0,2016,u. autónoma de madrid,12.686,12.843,True,madrid,0.0,0.002,0.003,0.157,C. Madrid,40.4832261,-3.6972262
 29.0,2016,u. de granada,12.772,13.048,True,granada,0.0,0.008,0.008,0.276,Andalucía,37.1474408,-3.6042349
-30.0,2016,u. de murcia,12.775,13.046,True,murcia,0.0,0.007,0.009,0.271,Andalucía,37.99109245,-1.13010405
+30.0,2016,u. de murcia,12.775,13.046,True,murcia,0.0,0.007,0.009,0.271,Murcia,37.99109245,-1.13010405
 31.0,2016,u. de sevilla,12.784,12.97,True,sevilla,0.0,0.013,0.011,0.186,Andalucía,37.4128557,-5.9845606
 32.0,2016,u. de las palmas,12.786,12.978,True,las palmas,0.0,0.011,-0.0,0.192,Canarias,28.09055808,-15.41890014
 0.0,2017,u. rovira i virgili (reus),12.08,12.346,True,reus,0.0,0.004,-0.007,0.266,Cataluña,41.155309,1.1053273
@@ -245,7 +245,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 19.0,2017,u. de cádiz,12.483,12.795,True,cádiz,0.0,-0.003,-0.005,0.312,Andalucía,36.5340199,-6.3018987
 20.0,2017,u. de la laguna,12.547,12.931,True,la laguna,0.0,0.003,-0.004,0.384,Canarias,28.4852475,-16.3126059
 21.0,2017,u. de córdoba,12.623,12.873,True,córdoba,0.0,-0.0,-0.005,0.25,Andalucía,37.8560421,-4.8134452
-22.0,2017,u. miguel hernández (s. juan de alicante),12.624,12.851,True,alicante,0.0,0.0,0.01,0.227,Andalucía,38.39896277,-0.43477806
+22.0,2017,u. miguel hernández (s. juan de alicante),12.624,12.851,True,alicante,0.0,0.0,0.01,0.227,C. Valenciana,38.39896277,-0.43477806
 23.0,2017,u. de málaga,12.631,12.856,True,málaga,0.0,-0.002,-0.003,0.225,Andalucía,36.7200431,-4.41617939
 24.0,2017,u. de las palmas,12.656,12.924,True,las palmas,0.0,-0.004,-0.01,0.268,Canarias,28.09055808,-15.41890014
 25.0,2017,u. de valencia,12.664,12.99,True,valencia,0.0,0.01,0.006,0.326,C. Valenciana,39.4786642,-0.3627246
@@ -253,7 +253,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 27.0,2017,u. de sevilla,12.725,12.921,True,sevilla,0.0,-0.004,-0.005,0.196,Andalucía,37.4128557,-5.9845606
 28.0,2017,u. de alcalá,12.743,12.747,True,alcalá,0.0,0.014,0.017,0.004,C. Madrid,40.4818396,-3.3644973
 29.0,2017,u. de granada,12.75,13.026,True,granada,0.0,-0.002,-0.002,0.276,Andalucía,37.1474408,-3.6042349
-30.0,2017,u. de murcia,12.819,13.176,True,murcia,0.0,0.01,0.003,0.357,Andalucía,37.99109245,-1.13010405
+30.0,2017,u. de murcia,12.819,13.176,True,murcia,0.0,0.01,0.003,0.357,Murcia,37.99109245,-1.13010405
 31.0,2017,u. complutense de madrid,12.871,12.871,True,madrid,0.0,0.01,0.022,0.0,C. Madrid,40.4437398,-3.72614639
 32.0,2017,u. autónoma de madrid,12.96,13.11,True,madrid,0.0,0.021,0.022,0.15,C. Madrid,40.4832261,-3.6972262
 0.0,2018,u. de las islas baleares,12.12,12.568,False,palma de mallorca,0.0,-0.014,0.001,0.448,Islas Baleares,39.60701435,2.64475448
@@ -276,7 +276,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 17.0,2018,u. de la laguna,12.491,12.859,True,la laguna,0.0,-0.006,-0.004,0.368,Canarias,28.4852475,-16.3126059
 18.0,2018,u. de zaragoza (campus zaragoza),12.511,12.732,True,zaragoza,0.0,0.003,0.005,0.221,Aragón,41.6421312,-0.90302271
 19.0,2018,u. de córdoba,12.555,12.842,True,córdoba,0.0,-0.002,-0.005,0.287,Andalucía,37.8560421,-4.8134452
-20.0,2018,u. de murcia,12.605,13.017,True,murcia,0.0,-0.012,-0.017,0.412,Andalucía,37.99109245,-1.13010405
+20.0,2018,u. de murcia,12.605,13.017,True,murcia,0.0,-0.012,-0.017,0.412,Murcia,37.99109245,-1.13010405
 21.0,2018,u. de málaga,12.612,12.87,True,málaga,0.0,0.001,-0.002,0.258,Andalucía,36.7200431,-4.41617939
 22.0,2018,u. de las palmas,12.625,12.859,True,las palmas,0.0,-0.005,-0.002,0.234,Canarias,28.09055808,-15.41890014
 23.0,2018,u. jaume i,12.628,12.948,False,castellon de la plana,0.0,0.013,0.013,0.32,C. Valenciana,39.9899483,-0.0664218
@@ -284,7 +284,7 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 25.0,2018,u. de c-la mancha (campus albacete),12.674,12.918,True,albacete,0.0,0.009,0.018,0.244,Castilla-La Mancha,38.4527362,-2.05363374
 26.0,2018,u. de sevilla,12.723,12.926,True,sevilla,0.0,0.0,-0.0,0.203,Andalucía,37.4128557,-5.9845606
 27.0,2018,urjc - campus alcorcón,12.746,12.792,True,madrid,0.0,-0.0,0.004,0.046,C. Madrid,40.3506324,-3.8437926
-28.0,2018,u. miguel hernández (s. juan de alicante),12.766,13.026,True,alicante,0.0,0.014,0.011,0.26,Andalucía,38.39896277,-0.43477806
+28.0,2018,u. miguel hernández (s. juan de alicante),12.766,13.026,True,alicante,0.0,0.014,0.011,0.26,C. Valenciana,38.39896277,-0.43477806
 29.0,2018,u. de alcalá,12.811,12.811,True,alcalá,0.0,0.005,0.005,0.0,C. Madrid,40.4818396,-3.3644973
 30.0,2018,u. de valencia,12.812,13.058,True,valencia,0.0,0.005,0.012,0.246,C. Valenciana,39.4786642,-0.3627246
 31.0,2018,u. autónoma de madrid,12.936,13.124,True,madrid,0.0,0.001,-0.002,0.188,C. Madrid,40.4832261,-3.6972262
@@ -309,8 +309,8 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 17.0,2019,u. de valencia,12.509,13.018,True,valencia,0.0,-0.003,-0.024,0.509,C. Valenciana,39.4786642,-0.3627246
 18.0,2019,u. de zaragoza (campus zaragoza),12.516,12.742,True,zaragoza,0.0,0.001,0.0,0.226,Aragón,41.6421312,-0.90302271
 19.0,2019,u. de extremadura (badajoz),12.547,12.965,True,badajoz,0.0,-0.001,0.013,0.418,Extremadura,38.8824069,-7.0194457
-20.0,2019,u. miguel hernández (s. juan de alicante),12.59,12.921,True,alicante,0.0,-0.008,-0.014,0.331,Andalucía,38.39896277,-0.43477806
-21.0,2019,u. de murcia,12.644,13.013,True,murcia,0.0,-0.0,0.003,0.369,Andalucía,37.99109245,-1.13010405
+20.0,2019,u. miguel hernández (s. juan de alicante),12.59,12.921,True,alicante,0.0,-0.008,-0.014,0.331,C. Valenciana,38.39896277,-0.43477806
+21.0,2019,u. de murcia,12.644,13.013,True,murcia,0.0,-0.0,0.003,0.369,Murcia,37.99109245,-1.13010405
 22.0,2019,u. de c-la mancha (campus albacete),12.668,12.975,True,albacete,0.0,0.004,-0.0,0.307,Castilla-La Mancha,38.4527362,-2.05363374
 23.0,2019,u. de c-la mancha (campus c.real),12.679,12.87,True,ciudad real,0.0,0.004,0.022,0.191,Castilla-La Mancha,38.9918372,-3.9268263
 24.0,2019,u. de la laguna,12.706,13.027,True,la laguna,0.0,0.013,0.017,0.321,Canarias,28.4852475,-16.3126059
@@ -328,13 +328,13 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 2.0,2020,u. de granada,13.27,13.5,True,granada,1.0,0.027,0.028,0.23,Andalucía,37.1474408,-3.6042349
 3.0,2020,u. de sevilla,13.256,13.429,True,sevilla,1.0,0.03,0.028,0.173,Andalucía,37.4128557,-5.9845606
 4.0,2020,u. de málaga,13.186,13.382,True,málaga,1.0,0.029,0.027,0.196,Andalucía,36.7200431,-4.41617939
-5.0,2020,u. de murcia,13.152,13.442,True,murcia,1.0,0.033,0.04,0.29,Andalucía,37.99109245,-1.13010405
+5.0,2020,u. de murcia,13.152,13.442,True,murcia,1.0,0.033,0.04,0.29,Murcia,37.99109245,-1.13010405
 6.0,2020,u. de alcalá,13.134,13.288,True,alcalá,1.0,0.029,0.017,0.154,C. Madrid,40.4818396,-3.3644973
 7.0,2020,u. de córdoba,13.122,13.355,True,córdoba,1.0,0.03,0.026,0.233,Andalucía,37.8560421,-4.8134452
 8.0,2020,urjc - campus alcorcón,13.1,13.257,True,madrid,1.0,0.029,0.024,0.157,C. Madrid,40.3506324,-3.8437926
 9.0,2020,u. de cádiz,13.09,13.311,True,cádiz,1.0,0.029,0.03,0.221,Andalucía,36.5340199,-6.3018987
 10.0,2020,u. de valencia,13.076,13.416,True,valencia,1.0,0.031,0.045,0.34,C. Valenciana,39.4786642,-0.3627246
-11.0,2020,u. miguel hernández (s. juan de alicante),13.038,13.309,True,alicante,1.0,0.03,0.036,0.271,Andalucía,38.39896277,-0.43477806
+11.0,2020,u. miguel hernández (s. juan de alicante),13.038,13.309,True,alicante,1.0,0.03,0.036,0.271,C. Valenciana,38.39896277,-0.43477806
 12.0,2020,u. de c-la mancha (campus c.real),13.014,13.281,True,ciudad real,1.0,0.032,0.026,0.267,Castilla-La Mancha,38.9918372,-3.9268263
 13.0,2020,u. de c-la mancha (campus albacete),12.991,13.28,True,albacete,1.0,0.024,0.025,0.289,Castilla-La Mancha,38.4527362,-2.05363374
 14.0,2020,u. jaume i,12.962,13.256,False,castellon de la plana,1.0,0.033,0.048,0.294,C. Valenciana,39.9899483,-0.0664218
@@ -360,13 +360,13 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 34.0,2020,u. de lérida,12.525,12.68,True,lérida,1.0,0.031,0.028,0.155,Cataluña,41.81636125,1.59713745
 0.0,2021,u. complutense de madrid,13.426,13.5,True,madrid,1.0,0.007,0.009,0.074,C. Madrid,40.4437398,-3.72614639
 1.0,2021,u. de sevilla,13.345,13.53,True,sevilla,1.0,0.008,0.007,0.185,Andalucía,37.4128557,-5.9845606
-2.0,2021,u. de murcia,13.345,13.558,True,murcia,1.0,0.009,0.015,0.213,Andalucía,37.99109245,-1.13010405
+2.0,2021,u. de murcia,13.345,13.558,True,murcia,1.0,0.009,0.015,0.213,Murcia,37.99109245,-1.13010405
 3.0,2021,u. de granada,13.319,13.58,True,granada,1.0,0.006,0.004,0.261,Andalucía,37.1474408,-3.6042349
 4.0,2021,u. autónoma de madrid,13.309,13.463,True,madrid,1.0,0.003,-0.003,0.154,C. Madrid,40.4832261,-3.6972262
 5.0,2021,u. de málaga,13.275,13.476,True,málaga,1.0,0.007,0.007,0.201,Andalucía,36.7200431,-4.41617939
 6.0,2021,u. de córdoba,13.25,13.45,True,córdoba,1.0,0.007,0.01,0.2,Andalucía,37.8560421,-4.8134452
 7.0,2021,u. de cádiz,13.232,13.43,True,cádiz,1.0,0.009,0.011,0.198,Andalucía,36.5340199,-6.3018987
-8.0,2021,u. miguel hernández (s. juan de alicante),13.15,13.419,True,alicante,1.0,0.008,0.009,0.269,Andalucía,38.39896277,-0.43477806
+8.0,2021,u. miguel hernández (s. juan de alicante),13.15,13.419,True,alicante,1.0,0.008,0.009,0.269,C. Valenciana,38.39896277,-0.43477806
 9.0,2021,u. de c-la mancha (campus c.real),13.146,13.421,True,ciudad real,1.0,0.011,0.01,0.275,Castilla-La Mancha,38.9918372,-3.9268263
 10.0,2021,u. de alcalá,13.133,13.357,True,alcalá,1.0,0.005,-0.0,0.224,C. Madrid,40.4818396,-3.3644973
 11.0,2021,u. de valladolid,13.121,13.332,True,valladolid,1.0,0.012,0.032,0.211,Castilla y León,41.6105937,-4.6916619
@@ -395,13 +395,13 @@ index,year,university,final_grade,1_list,since_2010,city,covid_format_change,gro
 34.0,2021,u. rovira i virgili (reus),12.708,12.852,True,reus,1.0,0.005,0.013,0.144,Cataluña,41.155309,1.1053273
 ,2022,u. complutense de madrid,13.467,13.541,True,madrid,1.0,0.003,0.003,0.074,C. Madrid,40.4437398,-3.72614639
 ,2022,u. de sevilla,13.382,13.567,True,sevilla,1.0,0.003,0.003,0.185,Andalucía,37.4128557,-5.9845606
-,2022,u. de murcia,13.336,13.549,True,murcia,1.0,-0.001,-0.001,0.213,Andalucía,37.99109245,-1.13010405
+,2022,u. de murcia,13.336,13.549,True,murcia,1.0,-0.001,-0.001,0.213,Murcia,37.99109245,-1.13010405
 ,2022,u. de granada,13.322,13.583,True,granada,1.0,0.0,0.0,0.261,Andalucía,37.1474408,-3.6042349
 ,2022,u. autónoma de madrid,13.395,13.549,True,madrid,1.0,0.006,0.006,0.154,C. Madrid,40.4832261,-3.6972262
 ,2022,u. de málaga,13.294,13.495,True,málaga,1.0,0.001,0.001,0.201,Andalucía,36.7200431,-4.41617939
 ,2022,u. de córdoba,13.26,13.46,True,córdoba,1.0,0.001,0.001,0.2,Andalucía,37.8560421,-4.8134452
 ,2022,u. de cádiz,13.261,13.459,True,cádiz,1.0,0.002,0.002,0.198,Andalucía,36.5340199,-6.3018987
-,2022,u. miguel hernández (s. juan de alicante),13.161,13.43,True,alicante,1.0,0.001,0.001,0.269,Andalucía,38.39896277,-0.43477806
+,2022,u. miguel hernández (s. juan de alicante),13.161,13.43,True,alicante,1.0,0.001,0.001,0.269,C. Valenciana,38.39896277,-0.43477806
 ,2022,u. de c-la mancha (campus c.real),13.178,13.453,True,ciudad real,1.0,0.002,0.002,0.275,Castilla-La Mancha,38.9918372,-3.9268263
 ,2022,u. de alcalá,13.21,13.434,True,alcalá,1.0,0.006,0.006,0.224,C. Madrid,40.4818396,-3.3644973
 ,2022,u. de valladolid,13.11,13.321,True,valladolid,1.0,-0.001,-0.001,0.211,Castilla y León,41.6105937,-4.6916619
