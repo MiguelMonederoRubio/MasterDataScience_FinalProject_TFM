@@ -2,19 +2,18 @@
 
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import altair as alt
 import folium as folium  # pip install folium
 from streamlit_folium import folium_static # pip install streamlit-folium
-from folium.features import GeoJson, GeoJsonTooltip, GeoJsonPopup
-import geopandas as gpd
-from folium.plugins import MarkerCluster
+#from folium.features import GeoJson, GeoJsonTooltip, GeoJsonPopup
+#import geopandas as gpd
+#from folium.plugins import MarkerCluster
+#import matplotlib.pyplot as plt
 
 # wide mode
 st.set_page_config(layout="wide")
-
 
 
 # LAYING OUT THE TOP SECTION OF THE APP
@@ -313,7 +312,7 @@ with row3_2:
     #   color_marked = 'grey'
     
     #print(latitude_uni, longitude_uni, score, uni, color_marked)
-    create_marker(m, latitude_uni, longitude_uni, convocatory_selected + ': ' + str(score), uni + ': ' + str(score), color_marked)
+    create_marker(m, latitude_uni, longitude_uni, uni + ': ' + str(score), uni + ': ' + str(score), color_marked)
     
   #create_marker(m, 41.502593, 2.080056, 'u. autónoma de barcelona', 13.0, 'darkred')
   # Display the map
