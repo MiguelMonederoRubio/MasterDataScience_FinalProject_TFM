@@ -7,16 +7,39 @@ import numpy as np
 import altair as alt
 import folium as folium  # pip install folium
 from streamlit_folium import folium_static # pip install streamlit-folium
-#from folium.features import GeoJson, GeoJsonTooltip, GeoJsonPopup
-#import geopandas as gpd
-#from folium.plugins import MarkerCluster
-#import matplotlib.pyplot as plt
+
+
+# functions we are going to use below
+
+# bar chart
+def bar_chart(df, x_axis):
+  chart = alt.Chart(df).mark_bar().encode(
+  x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df[convocatory_selected]) - 0.05, max(df[convocatory_selected]) + 0.05))),
+  y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
+  color=alt.condition(
+    alt.datum.highlight_color == 'yes', 
+    alt.value('orange'),     # highlight bars
+    alt.value('gray')   # And grey for the rest of the bars
+  ),
+  tooltip=('university',convocatory_selected)
+  )
+  return chart
+
+# create markers in map
+def create_marker(map, latitude, longitude, popup_info, tooltip_info, color_marked):
+   folium.Marker(
+      location=[latitude, longitude], # coordinates for the marker (Earth Lab at CU Boulder)
+      popup=popup_info, # pop-up label for the marker,
+      tooltip=tooltip_info , # tooltip label for the marker
+      icon=folium.Icon(color=color_marked, icon='university', prefix='fa', icon_color='white')
+      ).add_to(map)
+
 
 # wide mode
 st.set_page_config(layout="wide")
 
 
-# LAYING OUT THE TOP SECTION OF THE APP
+# LAYING OUT THE APP IN SECTIONS
 row1_1, row1_2 = st.columns((2, 2))
 
 with row1_1:
@@ -32,22 +55,23 @@ with row1_2:
     """
     )
 
+# LAYING OUT THE APP IN SECTIONS
 row2_1, row2_2, row2_3, row2_4 = st.columns((3, 1, 1, 1))
 
 with row2_1:
   year_selected = st.slider("Select year", 2022, 2010)
 
 
+# load data from notebook
+dfs_unified = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/exported_data_notebook.csv')
 
-dfs_unified = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/exported_data.csv')
 
-
-convocatory = ['final_grade', '1_list']
+# df filtered by year
 df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
 
 
-
 with row2_2:
+  # selectbox to filter by CCAA (commmunities of Spain)
   CCAA = list(df_year_selected['CCAA'].unique())
   CCAA.append('All')
   CCAA_selected = st.selectbox('Filter by CCAA (optional)', sorted(CCAA))
@@ -55,8 +79,10 @@ with row2_2:
 
 
 with row2_3:
+  # filter by score
   score_introduced = st.text_input('Filter by score (optional) (e.g., 12.5)')
 
+# errors to be shown on the filter by score
   if (score_introduced == ''):
     pass
   else:
@@ -64,27 +90,30 @@ with row2_3:
       float(score_introduced)
     except ValueError:
       st.error('Please enter a number')
+      score_introduced = ''
+  
+  if (score_introduced == ''):
+    pass
+  elif float(score_introduced) > float(14):
+    st.error('Please enter a number between 0 and 14')
+  elif float(score_introduced) < float(0):
+    st.error('Please enter a number between 0 and 14')
+
+
+# list of the 2 convocatories
+convocatory = ['final_grade', '1_list']
 
 with row2_4:
   convocatory_selected = st.radio('Select  convocatory', convocatory)
   
-  # falta manejo de errores, de 0-14, da error cuando filtras por CCAA y pones un numero menor que el minimo, etc.
 
- 
-#df_selected_university_year = df_selected_university_year.sort_values(by=['year'], ascending=False)
-
-#st.write('Data Dimension: ' + str(df_selected_university_year.shape[0]) + ' rows and ' + str(df_selected_university_year.shape[1]) + ' columns.')
-
-#st.dataframe(df_selected_university_year, 1000, 2000)
-
-
-
-
+# LAYING OUT THE APP IN SECTIONS
 row3_1, row3_2 = st.columns((2, 2))
 
-
+# create different dfs based on the filters used
 if (CCAA_selected == 'All') & (score_introduced == ''):
   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
+  
 elif (CCAA_selected != 'All') & (score_introduced == ''):
   df_year_selected_CCAA = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected)]
   list_unis_year_selected_CCAA = list(df_year_selected_CCAA['university'])
@@ -92,7 +121,7 @@ elif (CCAA_selected == 'All') & (score_introduced != ''):
   df_year_selected_score = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
   list_unis_year_selected_score = list(df_year_selected_score['university'])
 else:
-  #(CCAA_selected != 'All') & (score_introduced != '')
+  # (CCAA_selected != 'All') & (score_introduced != '')
   df_year_selected_CCAA_score = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
   list_unis_year_selected_CCAA_score = list(df_year_selected_CCAA_score['university'])
 
@@ -104,49 +133,20 @@ with row3_1:
   else:
     x_axis = 'final_grade:Q'
   
-  
   # to color universities based on filters
   df_year_selected['highlight_color'] = ''
   if (CCAA_selected != 'All') & (score_introduced == ''):
     for uni in list_unis_year_selected_CCAA:
       df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
-
-    chart = alt.Chart(df_year_selected).mark_bar().encode(
-    x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
-    y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
-    color=alt.condition(
-      alt.datum.highlight_color == 'yes', 
-      alt.value('orange'),     # highlight bars
-      alt.value('gray')   # And grey for the rest of the bars
-    ),
-    tooltip=('university',convocatory_selected)
-    )
+    chart = bar_chart(df_year_selected, x_axis)
   elif (CCAA_selected != 'All') & (score_introduced != ''):
     for uni in list_unis_year_selected_CCAA_score:
       df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
-    chart = alt.Chart(df_year_selected).mark_bar().encode(
-    x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
-    y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
-    color=alt.condition(
-      alt.datum.highlight_color == 'yes', 
-      alt.value('orange'),     # highlight bars
-      alt.value('gray')   # And grey for the rest of the bars
-    ),
-    tooltip=('university',convocatory_selected)
-    )
+    chart = bar_chart(df_year_selected, x_axis)
   elif (CCAA_selected == 'All') & (score_introduced != ''):
     for uni in list_unis_year_selected_score:
       df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
-    chart = alt.Chart(df_year_selected).mark_bar().encode(
-    x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
-    y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
-    color=alt.condition(
-      alt.datum.highlight_color == 'yes', 
-      alt.value('orange'),     # highlight bars
-      alt.value('gray')   # And grey for the rest of the bars
-    ),
-    tooltip=('university',convocatory_selected)
-    )
+    chart = bar_chart(df_year_selected, x_axis)
   else:
       chart = alt.Chart(df_year_selected).mark_bar().encode(
           x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
@@ -170,14 +170,74 @@ with row3_1:
 
 
 
-# map
-def create_marker(map, latitude, longitude, popup_info, tooltip_info, color_marked):
-   folium.Marker(
-      location=[latitude, longitude], # coordinates for the marker (Earth Lab at CU Boulder)
-      popup=popup_info, # pop-up label for the marker,
-      tooltip=tooltip_info , # tooltip label for the marker
-      icon=folium.Icon(color=color_marked, icon='university', prefix='fa', icon_color='white')
-      ).add_to(map)
+
+
+  
+  # to color universities based on filters
+  # df_year_selected['highlight_color'] = ''
+  # if (CCAA_selected != 'All') & (score_introduced == ''):
+  #   for uni in list_unis_year_selected_CCAA:
+  #     df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
+
+  #   chart = alt.Chart(df_year_selected).mark_bar().encode(
+  #   x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
+  #   color=alt.condition(
+  #     alt.datum.highlight_color == 'yes', 
+  #     alt.value('orange'),     # highlight bars
+  #     alt.value('gray')   # And grey for the rest of the bars
+  #   ),
+  #   tooltip=('university',convocatory_selected)
+  #   )
+  # elif (CCAA_selected != 'All') & (score_introduced != ''):
+  #   for uni in list_unis_year_selected_CCAA_score:
+  #     df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
+  #   chart = alt.Chart(df_year_selected).mark_bar().encode(
+  #   x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
+  #   color=alt.condition(
+  #     alt.datum.highlight_color == 'yes', 
+  #     alt.value('orange'),     # highlight bars
+  #     alt.value('gray')   # And grey for the rest of the bars
+  #   ),
+  #   tooltip=('university',convocatory_selected)
+  #   )
+  # elif (CCAA_selected == 'All') & (score_introduced != ''):
+  #   for uni in list_unis_year_selected_score:
+  #     df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
+  #   chart = alt.Chart(df_year_selected).mark_bar().encode(
+  #   x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
+  #   color=alt.condition(
+  #     alt.datum.highlight_color == 'yes', 
+  #     alt.value('orange'),     # highlight bars
+  #     alt.value('gray')   # And grey for the rest of the bars
+  #   ),
+  #   tooltip=('university',convocatory_selected)
+  #   )
+  # else:
+  #     chart = alt.Chart(df_year_selected).mark_bar().encode(
+  #         x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #         y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
+  #         tooltip=('university',convocatory_selected)
+  #       )
+    
+  # text = chart.mark_text(
+  #   align='left',
+  #   baseline='middle',
+  #   color='white',
+  #   dx=3  # Nudges text to right so it doesn't appear on top of the bar
+  # ).encode(
+  #   text=x_axis
+  # )
+
+  # graph = (chart + text).properties(title= str(year_selected) + ' ' + convocatory_selected + ' scores', width=200, height=600)
+    
+  # st.altair_chart(graph, use_container_width=True)
+
+
+
+
 
 
 with row3_2:
@@ -261,34 +321,18 @@ with row3_2:
   m = folium.Map(location=[latitude_map, longitude_map], zoom_start=zoom_map, width=800, height=550, control_scale=True, tiles='CartoDB Positron',
                   name='Light Map', attr='My Data attribution').add_to(f)
 
-  
 
   
-
-
-  list_unis_year_selected = list(df_year_selected['university'].unique())
+  #list_unis_year_selected = list(df_year_selected['university'].unique())
+  list_unis_year_selected = list(df_year_selected['university'])
   # iterate through list
-  #list_unis_year_selected = ['u. autónoma de barcelona']
-  
+ 
   for uni in list_unis_year_selected:
     latitude_uni = df_year_selected.loc[df_year_selected['university'] == uni, 'latitude'].mean()
     longitude_uni = df_year_selected.loc[df_year_selected['university'] == uni, 'longitude'].mean()
     
-    
     score = df_year_selected.loc[df_year_selected['university'] == uni, convocatory_selected].mean()
     
-    
-    # we don't want the color of the mark to change by filtering by score or CCAA
-    # df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
-    
-    # first 5
-    #top5 = list(df_year_selected_for_mark.sort_values(by=[convocatory_selected], ascending = False).head(5)['university'])
-    # last 5
-    #last5 = list(df_year_selected_for_mark.sort_values(by=[convocatory_selected], ascending = False).tail(5)['university'])
-    
-
-
-
     uni_highlighted = list(df_year_selected.loc[df_year_selected['highlight_color'] == 'yes', 'university'])
 
     if uni in uni_highlighted:
@@ -299,22 +343,8 @@ with row3_2:
     if (CCAA_selected == 'All') & (score_introduced == ''):
       color_marked = 'blue'
     
-    # if uni in top5:
-    #   
-    # elif uni in last5:
-    #   color_marked = 'green'
-    # else:
-    #   color_marked = 'orange'
-    
-    # if (df_year_selected.loc[df_year_selected['university'] == uni, 'highlight_color'].item()) == 'yes':
-    #   color_marked = 'yellow'
-    # else:
-    #   color_marked = 'grey'
-    
-    #print(latitude_uni, longitude_uni, score, uni, color_marked)
     create_marker(m, latitude_uni, longitude_uni, uni + ': ' + str(score), uni + ': ' + str(score), color_marked)
-    
-  #create_marker(m, 41.502593, 2.080056, 'u. autónoma de barcelona', 13.0, 'darkred')
+  
   # Display the map
   folium_static(f, width=800, height=550)
 
@@ -380,7 +410,7 @@ st.write(
   """
   )
 
-
+# LAYING OUT THE APP IN SECTIONS
 row4_1, row4_2 = st.columns((2, 2))
 
 # diff between 1_list and final_grade column
@@ -464,7 +494,7 @@ with row4_2:
         color=alt.condition(
           alt.datum.highlight_color == 'yes', 
           alt.value('orange'),     # highlight bars
-          alt.value('gray')   # And grey for the rest of the bars
+          alt.value('gray')   # And gray for the rest of the bars
         ),tooltip=('CCAA','diff_1_list_final_grade')
       )
   else:
@@ -497,20 +527,20 @@ st.write(
   """
   )
 # University selection
-if (CCAA_selected == 'All') & (score_introduced == ''):
-  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
-elif (CCAA_selected != 'All') & (score_introduced == ''):
-  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected)]
-elif (CCAA_selected == 'All') & (score_introduced != ''):
-  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
-else:
-  #(CCAA_selected != 'All') & (score_introduced != '')
-  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
+# if (CCAA_selected == 'All') & (score_introduced == ''):
+#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
+# elif (CCAA_selected != 'All') & (score_introduced == ''):
+#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected)]
+# elif (CCAA_selected == 'All') & (score_introduced != ''):
+#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
+# else:
+#   #(CCAA_selected != 'All') & (score_introduced != '')
+#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
   
 
 selected_university = st.selectbox('Select an university', sorted(df_year_selected['university'].unique()))
 
-
+# LAYING OUT THE APP IN SECTIONS
 row5_1, row5_2 = st.columns((4, 1))
 with row5_1:
   
