@@ -14,14 +14,14 @@ from streamlit_folium import folium_static # pip install streamlit-folium
 # bar chart
 def bar_chart(df, x_axis):
   chart = alt.Chart(df).mark_bar().encode(
-  x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df[convocatory_selected]) - 0.05, max(df[convocatory_selected]) + 0.05))),
+  x=alt.X(x_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df[score_selected]) - 0.05, max(df[score_selected]) + 0.05))),
   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
   color=alt.condition(
     alt.datum.highlight_color == 'yes', 
     alt.value('orange'),     # highlight bars
     alt.value('gray')   # And grey for the rest of the bars
   ),
-  tooltip=('university',convocatory_selected)
+  tooltip=('university',score_selected)
   )
   return chart
 
@@ -48,9 +48,9 @@ with row1_1:
 with row1_2:
   st.write(
     """
-    Displayed are the access scores of public universities in Spain to study medicine. Two convocatories are shown:
-    - "1_list": first score published (you need at least this score to enter the university in that convocatory)
-    - "final_grade": last score published (last chance you have in order to enter that university)
+    Displayed are the access scores of public universities in Spain to study medicine. Two scores are shown:
+    - "1_list": first score published. This is the highest score to be admitted at a university
+    - "final_grade": last score published. This is the lowest score to be admitted at a university
     *Scores shown for 2022 are predicted scores calculated by a Machine Learning model.
     """
     )
@@ -100,11 +100,11 @@ with row2_3:
     st.error('Please enter a number between 0 and 14')
 
 
-# list of the 2 convocatories
-convocatory = ['final_grade', '1_list']
+# list of the 2 scores
+score = ['final_grade', '1_list']
 
 with row2_4:
-  convocatory_selected = st.radio('Select  convocatory', convocatory)
+  score_selected = st.radio('Select  score', score)
   
 
 # LAYING OUT THE APP IN SECTIONS
@@ -118,17 +118,17 @@ elif (CCAA_selected != 'All') & (score_introduced == ''):
   df_year_selected_CCAA = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected)]
   list_unis_year_selected_CCAA = list(df_year_selected_CCAA['university'])
 elif (CCAA_selected == 'All') & (score_introduced != ''):
-  df_year_selected_score = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
+  df_year_selected_score = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[score_selected] <= float(score_introduced))]
   list_unis_year_selected_score = list(df_year_selected_score['university'])
 else:
   # (CCAA_selected != 'All') & (score_introduced != '')
-  df_year_selected_CCAA_score = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
+  df_year_selected_CCAA_score = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[score_selected] <= float(score_introduced))]
   list_unis_year_selected_CCAA_score = list(df_year_selected_CCAA_score['university'])
 
 with row3_1:
 
 # bar chart
-  if convocatory_selected == '1_list':
+  if score_selected == '1_list':
     x_axis = '1_list:Q'
   else:
     x_axis = 'final_grade:Q'
@@ -149,9 +149,9 @@ with row3_1:
     chart = bar_chart(df_year_selected, x_axis)
   else:
       chart = alt.Chart(df_year_selected).mark_bar().encode(
-          x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+          x=alt.X(x_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_year_selected[score_selected]) - 0.05, max(df_year_selected[score_selected]) + 0.05))),
           y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
-          tooltip=('university',convocatory_selected)
+          tooltip=('university',score_selected)
         )
     
   text = chart.mark_text(
@@ -163,7 +163,7 @@ with row3_1:
     text=x_axis
   )
 
-  graph = (chart + text).properties(title= str(year_selected) + ' ' + convocatory_selected + ' scores', width=200, height=600)
+  graph = (chart + text).properties(title= str(year_selected) + ' ' + score_selected + ' scores', width=200, height=600)
     
   st.altair_chart(graph, use_container_width=True)
 
@@ -180,46 +180,46 @@ with row3_1:
   #     df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
 
   #   chart = alt.Chart(df_year_selected).mark_bar().encode(
-  #   x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #   x=alt.X(x_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_year_selected[score_selected]) - 0.05, max(df_year_selected[score_selected]) + 0.05))),
   #   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
   #   color=alt.condition(
   #     alt.datum.highlight_color == 'yes', 
   #     alt.value('orange'),     # highlight bars
   #     alt.value('gray')   # And grey for the rest of the bars
   #   ),
-  #   tooltip=('university',convocatory_selected)
+  #   tooltip=('university',score_selected)
   #   )
   # elif (CCAA_selected != 'All') & (score_introduced != ''):
   #   for uni in list_unis_year_selected_CCAA_score:
   #     df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
   #   chart = alt.Chart(df_year_selected).mark_bar().encode(
-  #   x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #   x=alt.X(x_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_year_selected[score_selected]) - 0.05, max(df_year_selected[score_selected]) + 0.05))),
   #   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
   #   color=alt.condition(
   #     alt.datum.highlight_color == 'yes', 
   #     alt.value('orange'),     # highlight bars
   #     alt.value('gray')   # And grey for the rest of the bars
   #   ),
-  #   tooltip=('university',convocatory_selected)
+  #   tooltip=('university',score_selected)
   #   )
   # elif (CCAA_selected == 'All') & (score_introduced != ''):
   #   for uni in list_unis_year_selected_score:
   #     df_year_selected['highlight_color'] = np.where(df_year_selected['university'] == uni, 'yes', df_year_selected['highlight_color'])
   #   chart = alt.Chart(df_year_selected).mark_bar().encode(
-  #   x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #   x=alt.X(x_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_year_selected[score_selected]) - 0.05, max(df_year_selected[score_selected]) + 0.05))),
   #   y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
   #   color=alt.condition(
   #     alt.datum.highlight_color == 'yes', 
   #     alt.value('orange'),     # highlight bars
   #     alt.value('gray')   # And grey for the rest of the bars
   #   ),
-  #   tooltip=('university',convocatory_selected)
+  #   tooltip=('university',score_selected)
   #   )
   # else:
   #     chart = alt.Chart(df_year_selected).mark_bar().encode(
-  #         x=alt.X(x_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_year_selected[convocatory_selected]) - 0.05, max(df_year_selected[convocatory_selected]) + 0.05))),
+  #         x=alt.X(x_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_year_selected[score_selected]) - 0.05, max(df_year_selected[score_selected]) + 0.05))),
   #         y=alt.Y('university:O', sort='-x', axis=alt.Axis(title='University')),
-  #         tooltip=('university',convocatory_selected)
+  #         tooltip=('university',score_selected)
   #       )
     
   # text = chart.mark_text(
@@ -231,7 +231,7 @@ with row3_1:
   #   text=x_axis
   # )
 
-  # graph = (chart + text).properties(title= str(year_selected) + ' ' + convocatory_selected + ' scores', width=200, height=600)
+  # graph = (chart + text).properties(title= str(year_selected) + ' ' + score_selected + ' scores', width=200, height=600)
     
   # st.altair_chart(graph, use_container_width=True)
 
@@ -245,6 +245,8 @@ with row3_2:
   f = folium.Figure(width=800, height=550)
 
 # change latitude, longitude and zoom of map based on CCAA selected
+# latitude and longitude below are values to have each CCAA centered on the map
+
   if CCAA_selected == 'All':
     latitude_map = 40.4167047
     longitude_map = -3.7035825
@@ -331,7 +333,7 @@ with row3_2:
     latitude_uni = df_year_selected.loc[df_year_selected['university'] == uni, 'latitude'].mean()
     longitude_uni = df_year_selected.loc[df_year_selected['university'] == uni, 'longitude'].mean()
     
-    score = df_year_selected.loc[df_year_selected['university'] == uni, convocatory_selected].mean()
+    score = df_year_selected.loc[df_year_selected['university'] == uni, score_selected].mean()
     
     uni_highlighted = list(df_year_selected.loc[df_year_selected['highlight_color'] == 'yes', 'university'])
 
@@ -354,12 +356,12 @@ with row3_2:
 
 
 # scores by CCAA
-df_CCAA_year_selected = df_year_selected.groupby('CCAA')[convocatory_selected].mean().reset_index()
+df_CCAA_year_selected = df_year_selected.groupby('CCAA')[score_selected].mean().reset_index()
 # round to 3 decimals
-df_CCAA_year_selected[convocatory_selected] = df_CCAA_year_selected[convocatory_selected].apply(lambda x: round(x, 3))
+df_CCAA_year_selected[score_selected] = df_CCAA_year_selected[score_selected].apply(lambda x: round(x, 3))
 
 # bar chart
-if convocatory_selected == '1_list':
+if score_selected == '1_list':
     y_axis = '1_list:Q'
 else:
     y_axis = 'final_grade:Q'
@@ -372,20 +374,20 @@ if (CCAA_selected != 'All'):
   
   chart = alt.Chart(df_CCAA_year_selected).mark_bar().encode(
     x=alt.X('CCAA:O', sort='-y', axis=alt.Axis(title='CCAA', labelAngle=0)),
-    y=alt.Y(y_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_CCAA_year_selected[convocatory_selected]) - 0.05, max(df_CCAA_year_selected[convocatory_selected]) + 0.05))),
+    y=alt.Y(y_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_CCAA_year_selected[score_selected]) - 0.05, max(df_CCAA_year_selected[score_selected]) + 0.05))),
     color=alt.condition(
       alt.datum.highlight_color == 'yes', 
       alt.value('orange'),     # highlight bars
       alt.value('gray')   # And grey for the rest of the bars
     ),
-    tooltip=('CCAA',convocatory_selected)
+    tooltip=('CCAA',score_selected)
   )
 
 else:
   chart = alt.Chart(df_CCAA_year_selected).mark_bar().encode(
     x=alt.X('CCAA:O', sort='-y', axis=alt.Axis(title='CCAA', labelAngle=0)),
-    y=alt.Y(y_axis, axis=alt.Axis(title=convocatory_selected), scale=alt.Scale(domain=(min(df_CCAA_year_selected[convocatory_selected]) - 0.05, max(df_CCAA_year_selected[convocatory_selected]) + 0.05))),
-    tooltip=('CCAA',convocatory_selected)
+    y=alt.Y(y_axis, axis=alt.Axis(title=score_selected), scale=alt.Scale(domain=(min(df_CCAA_year_selected[score_selected]) - 0.05, max(df_CCAA_year_selected[score_selected]) + 0.05))),
+    tooltip=('CCAA',score_selected)
   )
 
 text = chart.mark_text(
@@ -397,7 +399,7 @@ text = chart.mark_text(
     text=y_axis,  
   )
     
-graph = (chart + text).properties(title= str(year_selected) + ' average ' + convocatory_selected + ' scores by CCAA', width = 200, height = 400)
+graph = (chart + text).properties(title= str(year_selected) + ' average ' + score_selected + ' scores by CCAA', width = 200, height = 400)
   
 st.altair_chart(graph, use_container_width=True)
 
@@ -406,7 +408,7 @@ st.altair_chart(graph, use_container_width=True)
 
 st.write(
   """
-  Some people get admitted to an university they applied for but they decide to switch to another university, making the access score of the university they are leaving go down. Which university and CCAA experience the biggest difference between the 1_list and the final_grade convocatories?
+  Some people get admitted to an university they applied for but they decide to switch to another university, making the access score of the university they are leaving go down. Which university and CCAA experience the biggest difference between the 1_list and the final_grade scores?
   """
   )
 
@@ -523,19 +525,19 @@ with row4_2:
 
 st.write(
   """
-  Historical view of the scores (convocatory selected above) for a specific university
+  Historical view of the scores (score selected above) for a specific university
   """
   )
 # University selection
-# if (CCAA_selected == 'All') & (score_introduced == ''):
-#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
-# elif (CCAA_selected != 'All') & (score_introduced == ''):
-#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected)]
-# elif (CCAA_selected == 'All') & (score_introduced != ''):
-#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
-# else:
-#   #(CCAA_selected != 'All') & (score_introduced != '')
-#   df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[convocatory_selected] <= float(score_introduced))]
+if (CCAA_selected == 'All') & (score_introduced == ''):
+  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected)]
+elif (CCAA_selected != 'All') & (score_introduced == ''):
+  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected)]
+elif (CCAA_selected == 'All') & (score_introduced != ''):
+  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified[score_selected] <= float(score_introduced))]
+else:
+  #(CCAA_selected != 'All') & (score_introduced != '')
+  df_year_selected = dfs_unified[(dfs_unified['year'] == year_selected) & (dfs_unified['CCAA'] == CCAA_selected) & (dfs_unified[score_selected] <= float(score_introduced))]
   
 
 selected_university = st.selectbox('Select an university', sorted(df_year_selected['university'].unique()))
@@ -546,9 +548,9 @@ with row5_1:
   
   # line chart 1_list and final_grade
 
-  def line_chart_selected_uni(uni_name_selected, convocatory):
+  def line_chart_selected_uni(uni_name_selected, score):
     #create y_axis name
-    if convocatory == 'final_grade':
+    if score == 'final_grade':
         y_axis = 'final_grade:Q'
     else:
         y_axis = '1_list:Q'
@@ -559,14 +561,14 @@ with row5_1:
     if (CCAA_selected != 'All') | (score_introduced != ''):
       chart = alt.Chart(df_selected_university).mark_line(point=True).encode(
           x=alt.X('year:N', axis=alt.Axis(title='Year', labelAngle=0)),
-          y=alt.Y(y_axis, axis=alt.Axis(title=convocatory), scale=alt.Scale(domain=(min(df_selected_university[convocatory]) - 0.1, max(df_selected_university[convocatory]) + 0.1))),
+          y=alt.Y(y_axis, axis=alt.Axis(title=score), scale=alt.Scale(domain=(min(df_selected_university[score]) - 0.1, max(df_selected_university[score]) + 0.1))),
           color=alt.value('orange'),
-          tooltip=convocatory)
+          tooltip=score)
     else:
       chart = alt.Chart(df_selected_university).mark_line(point=True).encode(
           x=alt.X('year:N', axis=alt.Axis(title='Year', labelAngle=0)),
-          y=alt.Y(y_axis, axis=alt.Axis(title=convocatory), scale=alt.Scale(domain=(min(df_selected_university[convocatory]) - 0.1, max(df_selected_university[convocatory]) + 0.1))),
-          tooltip=convocatory)
+          y=alt.Y(y_axis, axis=alt.Axis(title=score), scale=alt.Scale(domain=(min(df_selected_university[score]) - 0.1, max(df_selected_university[score]) + 0.1))),
+          tooltip=score)
     
     text = chart.mark_text(
         align='center',
@@ -577,22 +579,34 @@ with row5_1:
         text= y_axis
       )
       
-    graph = (chart + text).properties(title= str(uni_name_selected) + ' evolution of ' + str(convocatory) + ' scores across years')
+    graph = (chart + text).properties(title= str(uni_name_selected) + ' evolution of ' + str(score) + ' scores across years')
     
     return st.altair_chart(graph, use_container_width=True)
 
-  line_chart_selected_uni(selected_university, convocatory_selected)
+  try:
+    line_chart_selected_uni(selected_university, score_selected)
+  except:
+    st.error('No universities available given the filters entered')
  
 
 with row5_2:
   st.set_option('deprecation.showPyplotGlobalUse', False)
   df_selected_university = dfs_unified[(dfs_unified['university'] == selected_university)]
-
-  df_selected_university_reduced = df_selected_university[['year', convocatory_selected]]
-  #plt.figure(figsize=(16, 4))
+  df_selected_university_reduced = df_selected_university[['year', score_selected]]
   heatmap = sns.heatmap(df_selected_university_reduced.corr(), vmax=1, annot=True, cmap='BrBG')
   heatmap.set_title('Correlation Heatmap', fontdict={'fontsize':14}, pad=12);
   st.pyplot()
 
   
 
+# AUTHOR INFORMATION
+
+st.write(
+    """
+    Author: Miguel Monedero Rubio
+
+    Linkedin: https://es.linkedin.com/in/miguel-monedero-rubio-9abb73150
+
+    Github: https://github.com/MiguelMonederoRubio
+    """
+    )
