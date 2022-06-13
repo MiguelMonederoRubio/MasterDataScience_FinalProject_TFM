@@ -1,4 +1,4 @@
-# in terminal: streamlit run /Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/streamlit/myapp.py
+# in terminal: streamlit run /Users/miguel/repos/Spain_Medicine_Admissions_App/streamlit/myapp.py
 
 import streamlit as st
 import pandas as pd
@@ -8,6 +8,13 @@ import altair as alt
 import folium as folium  # pip install folium
 from streamlit_folium import folium_static # pip install streamlit-folium
 
+
+
+# load data from notebook
+your_directory = '/Users/miguel'
+exported_data_directory = your_directory + '/output'
+file_name = exported_data_directory + '/exported_data_notebook.csv'
+dfs_unified = pd.read_csv(file_name)
 
 # functions we are going to use below
 
@@ -62,11 +69,6 @@ with row2_1:
   year_selected = st.slider("Select year", 2022, 2010)
 
 
-# load data from notebook
-your_directory = '/Users/miguel'
-exported_data_directory = your_directory + '/output'
-file_name = exported_data_directory + '/exported_data_notebook.csv'
-dfs_unified = pd.read_csv(file_name)
 
 
 # df filtered by year
