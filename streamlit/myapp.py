@@ -1,4 +1,3 @@
-# in terminal: streamlit run /Users/miguel/repos/Spain_Medicine_Admissions_App/streamlit/myapp.py
 
 import streamlit as st
 import pandas as pd
@@ -7,7 +6,6 @@ import numpy as np
 import altair as alt
 import folium as folium  # pip install folium
 from streamlit_folium import folium_static # pip install streamlit-folium
-
 
 
 # load data from notebook
