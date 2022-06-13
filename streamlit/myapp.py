@@ -63,7 +63,10 @@ with row2_1:
 
 
 # load data from notebook
-dfs_unified = pd.read_csv('/Users/miguel/repos/Prediction_Medicine_Selectivity_Scores/output/exported_data_notebook.csv')
+your_directory = '/Users/miguel'
+exported_data_directory = your_directory + '/output'
+file_name = exported_data_directory + '/exported_data_notebook.csv'
+dfs_unified = pd.read_csv(file_name)
 
 
 # df filtered by year
