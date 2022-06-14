@@ -1,20 +1,19 @@
 # Spain's_Medicine_Admissions_App
 
-# 1 INTRODUCTION
-## 1.1 Context summary
+## 1 INTRODUCTION
+### 1.1 Context summary
 Historically, Medicine has always been one of the most demanded careers to study in Spain. Nowadays, it’s still one of the hardest careers to get in, due to the high demand of people wanting to study this career in a public university (because of economic pricing, big different in comparison to a private university, plus reputational reasons) and the very few available slots.
 
 To be able to study this career in Spain, you need to achieve a certain average score in “Selectividad”. “Selectividad” is the popular name given to the Spanish University Admission Tests ("Evaluación de Acceso a la Universidad", E.v.A.U.), a non-compulsory exam taken by students after secondary school, necessary to get into university. Students must take six 90-minute written exams over three days in June/July, consisting of common and specific subjects taken in "Bachillerato" (the last two non-compulsory years of secondary education). “Selectividad” exams are set by the Public Universities of each autonomous community and allow students access to the Spanish university system.
 
 Once you do “Selectividad” the universities publish the score you need in order to enter their university, this score is a number ranging from 0 to 14. They publish these scores in the web pages corresponding to each university, meaning that applicants need to consult these scores in each of the university web pages, making it hard to have a holistic view. There are a few web pages that consolidate this information and put it in one single place to have centralized platform. However, these web pages show just a table containing the scores from the different universities and do not show any visualizations or filters in order to facilitate users consult this information. In addition, many students suffer uncertainty every year because of not knowing what the scores would be the next year (to see if they could finally be admitted in a university to study this career), therefore, one of the objectives will be to predict the next year scores (2022).
 
-## 1.2 Objective
+### 1.2 Objective
 There are two objectives for this project:
 1)	Predict next year scores (2022): data source has data ranging from 2010 to 2021
-2)	Create a centralized and accessible place, in this case it will be a web app, to consult the different Medicine admission grades from all the universities in Spain, in a visual and helpful manner. This app will help people save time by not having to go to each of the universities web pages to consult the different scores. Also, it will help guide the user in order to help them make the decision that works best for them. 
-![image](https://user-images.githubusercontent.com/92814876/173615151-966f808f-5ae6-4e31-aa19-9943e0ec2cf4.png)
+2)	Create a centralized and accessible place, in this case it will be a web app, to consult the different Medicine admission grades from all the universities in Spain, in a visual and helpful manner. This app will help people save time by not having to go to each of the universities web pages to consult the different scores. Also, it will help guide the user in order to help them make the decision that works best for them.
 
-## 1.3 Repository
+### 1.3 Repository
 This repository has three different folders:
 -	final_master_thesis: folder in which this document is stored
 -	notebook: jupyter notebook (Spain_Medicine_Admissions_App.ipynb) containing all the code from this project except for the front-end
@@ -33,9 +32,9 @@ To execute the two coding files (Spain_Medicine_Admissions_App.ipynb and myapp.p
 Spain_Medicine_Admissions_App.ipynb will be stored here. Enter highlighted directory in myapp.py.
 
 
-# 2. DATA OBTENTION
+## 2. DATA OBTENTION
 In this section we will be describing the source from which we got the data to do this project.
-## 2.1 Web page
+### 2.1 Web page
 The source of data is coming from a web page called “ACCESO A LAS FACULTADES DE MEDICINA DE ESPAÑA Y NOTAS DE CORTE” that you can find in the following link:
 -	https://sites.google.com/site/notasdecorte/
 The data we are using is found on the left side of the web page (“Notas de corte de medicina year/year+1”), see figure 2:
@@ -57,7 +56,7 @@ There is data going from the period of year 2010-2011 till 2021-2022, this is, a
 12)	2021/2022
 
 
-# 2. FRONT-END
+## 2. FRONT-END
 The front-end has been done on streamlit, to use it you will need to run the “myapp.py” file. In this section we will be analyzing the different data visualizations that are in it.
 
 <img width="426" alt="image" src="https://user-images.githubusercontent.com/92814876/173616829-c23bbf49-d4ce-4776-97f5-7b10b17e3b1c.png">
