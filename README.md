@@ -1,6 +1,6 @@
 # Spain's_Medicine_Admissions_App
 
-## 1 INTRODUCTION
+## 1. Introduction
 ### 1.1 Context summary
 Historically, Medicine has always been one of the most demanded careers to study in Spain. Nowadays, it’s still one of the hardest careers to get in, due to the high demand of people wanting to study this career in a public university (because of economic pricing, big different in comparison to a private university, plus reputational reasons) and the very few available slots.
 
@@ -19,10 +19,8 @@ This repository has three different folders:
 -	notebook: jupyter notebook (Spain_Medicine_Admissions_App.ipynb) containing all the code from this project except for the front-end
 -	streamlit: file (myapp.py) containing code corresponding to the front-end application built on streamlit
 o	To execute this file just run the following command on your terminal, entering your directory:
-	streamlit run “your directory” /myapp.py
+- streamlit run “your directory” /myapp.py
 Please see in figure 1 a diagram showcasing the workflow followed to build this project:
-
-
 <img width="519" alt="image" src="https://user-images.githubusercontent.com/92814876/173615749-e047e1e9-c976-40e8-a106-88c468787b48.png">
 Figure 1: Workflow diagram
 
@@ -32,7 +30,7 @@ To execute the two coding files (Spain_Medicine_Admissions_App.ipynb and myapp.p
 Spain_Medicine_Admissions_App.ipynb will be stored here. Enter highlighted directory in myapp.py.
 
 
-## 2. DATA OBTENTION
+## 2. Data Obtention
 In this section we will be describing the source from which we got the data to do this project.
 ### 2.1 Web page
 The source of data is coming from a web page called “ACCESO A LAS FACULTADES DE MEDICINA DE ESPAÑA Y NOTAS DE CORTE” that you can find in the following link:
@@ -56,7 +54,7 @@ There is data going from the period of year 2010-2011 till 2021-2022, this is, a
 12)	2021/2022
 
 
-## 2. FRONT-END
+## 3. Front-end
 The front-end has been done on streamlit, to use it you will need to run the “myapp.py” file. In this section we will be analyzing the different data visualizations that are in it.
 
 <img width="426" alt="image" src="https://user-images.githubusercontent.com/92814876/173616829-c23bbf49-d4ce-4776-97f5-7b10b17e3b1c.png">
