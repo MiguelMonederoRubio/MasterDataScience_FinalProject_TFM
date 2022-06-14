@@ -58,7 +58,7 @@ Data used for this project is going from the period of year 2010-2011 till 2021-
 
 
 ## 3. Front-end
-The front-end has been done on streamlit, to use it you will need to run the “myapp.py” file. In this section we will be analyzing the different data visualizations that are in it.
+The front-end has been done on streamlit, to use it you will need to run the “myapp.py” file: streamlit run “your directory” /myapp.py
 
 <img width="426" alt="image" src="https://user-images.githubusercontent.com/92814876/173616829-c23bbf49-d4ce-4776-97f5-7b10b17e3b1c.png">
 Link to video on YouTube: https://youtu.be/hWlolS7YmA4![image](https://user-images.githubusercontent.com/92814876/173616864-93e320fd-cd47-4c76-8136-cd0c2e4b7743.png)
