@@ -2,16 +2,16 @@
 
 ## 1. Introduction
 ### 1.1 Context summary
-Historically, Medicine has always been one of the most demanded careers to study in Spain. Nowadays, it’s still one of the hardest careers to get in, due to the high demand of people wanting to study this career in a public university (because of economic pricing, big different in comparison to a private university, plus reputational reasons) and the very few available slots.
+Historically, Medicine has always been one of the most demanded careers to study in Spain. Nowadays, it’s still one of the hardest careers to get in, due to the high demand of people wanting to study this career in a public university (because of economic pricing, big difference in comparison to a private university, plus reputational reasons) and the very few available slots for students.
 
-To be able to study this career in Spain, you need to achieve a certain average score in “Selectividad”. “Selectividad” is the popular name given to the Spanish University Admission Tests ("Evaluación de Acceso a la Universidad", E.v.A.U.), a non-compulsory exam taken by students after secondary school, necessary to get into university. Students must take six 90-minute written exams over three days in June/July, consisting of common and specific subjects taken in "Bachillerato" (the last two non-compulsory years of secondary education). “Selectividad” exams are set by the Public Universities of each autonomous community and allow students access to the Spanish university system.
+To be able to study this career in Spain, you need to achieve a certain average score in “Selectividad”. “Selectividad” is the popular name given to the Spanish University Admission Tests ("Evaluación de Acceso a la Universidad", E.v.A.U.), a non-compulsory exam taken by students after secondary school. Students must take six 90-minute written exams over three days in June/July, consisting of common and specific subjects taken in "Bachillerato" (the last two non-compulsory years of secondary education). “Selectividad” exams are set by the Public Universities of each autonomous community and allow students access to the Spanish university system.
 
-Once you do “Selectividad” the universities publish the score you need in order to enter their university, this score is a number ranging from 0 to 14. They publish these scores in the web pages corresponding to each university, meaning that applicants need to consult these scores in each of the university web pages, making it hard to have a holistic view. There are a few web pages that consolidate this information and put it in one single place to have centralized platform. However, these web pages show just a table containing the scores from the different universities and do not show any visualizations or filters in order to facilitate users consult this information. In addition, many students suffer uncertainty every year because of not knowing what the scores would be the next year (to see if they could finally be admitted in a university to study this career), therefore, one of the objectives will be to predict the next year scores (2022).
+Once you do “Selectividad” the universities publish the score you need in order to enter their university, this score is a number ranging from 0 to 14. They publish these scores in the web pages corresponding to each university, meaning that applicants need to consult these scores in each of the university web pages, making it hard to have a holistic view. There are a few web pages that consolidate this information and put it in one single place to have centralized platform. However, these web pages show just a table containing the scores from the different universities and do not show any visualizations or filters in order to facilitate students consult this information. In addition, many students suffer uncertainty every year because of not knowing what the scores would be the next year (to see if they could finally be admitted in a university to study this career), therefore, one of the objectives will be to predict the next year scores (2022).
 
 ### 1.2 Objective
 There are two objectives for this project:
 1)	Predict next year scores (2022): data source has data ranging from 2010 to 2021
-2)	Create a centralized and accessible place, in this case it will be a web app, to consult the different Medicine admission grades from all the universities in Spain, in a visual and helpful manner. This app will help people save time by not having to go to each of the universities web pages to consult the different scores. Also, it will help guide the user in order to help them make the decision that works best for them.
+2)	Create a centralized and accessible place, in this case it will be a web app, to consult the different Medicine admission grades from all the universities in Spain, in a visual and helpful manner. This app will help people save time by not having to go to each of the universities web pages to consult the different scores. Also, it will help guide the user in order to make the decision that works best for them.
 
 ### 1.3 Repository
 This repository has three different folders:
@@ -20,7 +20,8 @@ This repository has three different folders:
 -	streamlit: file (myapp.py) containing code corresponding to the front-end application built on streamlit. To execute this file just run the following command on your terminal, entering your directory: streamlit run “your directory” /myapp.py
 
 Please see below a diagram showcasing the workflow followed to build this project:
-<img width="519" alt="image" src="https://user-images.githubusercontent.com/92814876/173615749-e047e1e9-c976-40e8-a106-88c468787b48.png">
+
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/92814876/173615749-e047e1e9-c976-40e8-a106-88c468787b48.png">
 
 In order to replicate the work done you will need to have access to Python 3.
 
@@ -39,7 +40,7 @@ The source of data is coming from a web page called “ACCESO A LAS FACULTADES D
 
 The data we are using is found on the left side of the web page (“Notas de corte de medicina year/year+1”):
 
-<img width="425" alt="image" src="https://user-images.githubusercontent.com/92814876/173616174-85433f2e-8a98-4624-80e5-1cb02887555b.png">
+<img width="725" alt="image" src="https://user-images.githubusercontent.com/92814876/173616174-85433f2e-8a98-4624-80e5-1cb02887555b.png">
 
 
 Data used for this project is going from the period of year 2010-2011 till 2021-2022, 12 years:
@@ -60,5 +61,11 @@ Data used for this project is going from the period of year 2010-2011 till 2021-
 ## 3. Front-end
 The front-end has been done on streamlit, to use it you will need to run the “myapp.py” file: streamlit run “your directory” /myapp.py
 
-<img width="426" alt="image" src="https://user-images.githubusercontent.com/92814876/173616829-c23bbf49-d4ce-4776-97f5-7b10b17e3b1c.png">
-Link to video on YouTube: https://youtu.be/hWlolS7YmA4![image](https://user-images.githubusercontent.com/92814876/173616864-93e320fd-cd47-4c76-8136-cd0c2e4b7743.png)
+Preview of front-end:
+
+
+https://user-images.githubusercontent.com/92814876/173628140-ad8b6d85-f1ad-41cb-a274-4b9be916f0a4.mp4
+
+
+
+Link to complete video on YouTube: https://youtu.be/hWlolS7YmA4![image](https://user-images.githubusercontent.com/92814876/173616864-93e320fd-cd47-4c76-8136-cd0c2e4b7743.png)
