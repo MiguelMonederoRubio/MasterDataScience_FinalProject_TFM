@@ -26,7 +26,7 @@ Please see below a diagram showcasing the workflow followed to build this projec
 In order to replicate the work done you will need to have access to Python 3.
 
 To execute the two coding files (Spain_Medicine_Admissions_App.ipynb and myapp.py), you would need to create two folders within your home directory:
-1)	 “raw_data”, being your directory ‘/Users/your_home/raw_data’: here you would store the different csv files. Details of the data source will be explained on section 2 (data obtention). Enter highlighted directory in Spain_Medicine_Admissions_App.ipynb.
+1)	 “raw_data”, being your directory ‘/Users/your_home/raw_data’: here you would store the 12 csv files. Details of the data source will be explained on section 2 (data obtention). Enter highlighted directory in Spain_Medicine_Admissions_App.ipynb.
 2)	“output”, being your directory ‘/Users/your_home/output’: the output csv coming from 
 Spain_Medicine_Admissions_App.ipynb will be stored here. Enter highlighted directory in myapp.py.
 
@@ -57,6 +57,7 @@ Data used for this project is going from the period of year 2010-2011 till 2021-
 11)	2020/2021
 12)	2021/2022
 
+Each year has its own excel file. For simplicity, we have saved the 12 files in csv format.
 
 ## 3. Front-end
 The front-end has been done on streamlit, to use it you will need to run the “myapp.py” file: streamlit run “your directory” /myapp.py
