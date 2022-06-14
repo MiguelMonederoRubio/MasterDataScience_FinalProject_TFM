@@ -15,31 +15,34 @@ There are two objectives for this project:
 
 ### 1.3 Repository
 This repository has three different folders:
--	final_master_thesis: folder in which this document is stored
+-	final_master_thesis: folder in which a .pdf document is stored which explains the entire project
 -	notebook: jupyter notebook (Spain_Medicine_Admissions_App.ipynb) containing all the code from this project except for the front-end
--	streamlit: file (myapp.py) containing code corresponding to the front-end application built on streamlit
-o	To execute this file just run the following command on your terminal, entering your directory:
-- streamlit run “your directory” /myapp.py
-Please see in figure 1 a diagram showcasing the workflow followed to build this project:
+-	streamlit: file (myapp.py) containing code corresponding to the front-end application built on streamlit. To execute this file just run the following command on your terminal, entering your directory: streamlit run “your directory” /myapp.py
+
+Please see below a diagram showcasing the workflow followed to build this project:
 <img width="519" alt="image" src="https://user-images.githubusercontent.com/92814876/173615749-e047e1e9-c976-40e8-a106-88c468787b48.png">
-Figure 1: Workflow diagram
+
+In order to replicate the work done you will need to have access to Python 3.
 
 To execute the two coding files (Spain_Medicine_Admissions_App.ipynb and myapp.py), you would need to create two folders within your home directory:
 1)	 “raw_data”, being your directory ‘/Users/your_home/raw_data’: here you would store the different csv files. Details of the data source will be explained on section 2 (data obtention). Enter highlighted directory in Spain_Medicine_Admissions_App.ipynb.
 2)	“output”, being your directory ‘/Users/your_home/output’: the output csv coming from 
 Spain_Medicine_Admissions_App.ipynb will be stored here. Enter highlighted directory in myapp.py.
 
+All Python libraries that need to be installed appear at the beginning of the coding files (Spain_Medicine_Admissions_App.ipynb and myapp.py), but relax, everything is ready in the files.
 
 ## 2. Data Obtention
 In this section we will be describing the source from which we got the data to do this project.
 ### 2.1 Web page
 The source of data is coming from a web page called “ACCESO A LAS FACULTADES DE MEDICINA DE ESPAÑA Y NOTAS DE CORTE” that you can find in the following link:
 -	https://sites.google.com/site/notasdecorte/
-The data we are using is found on the left side of the web page (“Notas de corte de medicina year/year+1”), see figure 2:
-<img width="425" alt="image" src="https://user-images.githubusercontent.com/92814876/173616174-85433f2e-8a98-4624-80e5-1cb02887555b.png">
-Figure 2: Web page from which data was taken
 
-There is data going from the period of year 2010-2011 till 2021-2022, this is, a total of 12 years:
+The data we are using is found on the left side of the web page (“Notas de corte de medicina year/year+1”):
+
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/92814876/173616174-85433f2e-8a98-4624-80e5-1cb02887555b.png">
+
+
+Data used for this project is going from the period of year 2010-2011 till 2021-2022, 12 years:
 1)	2010/2011
 2)	2011/2012
 3)	2012/2013
