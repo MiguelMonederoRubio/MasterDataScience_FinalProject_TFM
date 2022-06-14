@@ -29,7 +29,7 @@ To execute the two coding files (Spain_Medicine_Admissions_App.ipynb and myapp.p
 2)	“output”, being your directory ‘/Users/your_home/output’: the output csv coming from 
 Spain_Medicine_Admissions_App.ipynb will be stored here. Enter highlighted directory in myapp.py.
 
-All Python libraries that need to be installed appear at the beginning of the coding files (Spain_Medicine_Admissions_App.ipynb and myapp.py), but relax, everything is ready in the files.
+All Python libraries that need to be installed appear at the beginning of the coding files (Spain_Medicine_Admissions_App.ipynb and myapp.py).
 
 ## 2. Data Obtention
 In this section we will be describing the source from which we got the data to do this project.
